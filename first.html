@@ -19,12 +19,14 @@ function getLocation() {
     } else {
         x.innerHTML = "Geolocation is not supported by this browser.";
 		document.getElementById("textinput").value = "ไม่สามารถคนหาตำแหน่งได้";
+		document.getElementById("textinput1").value = "ไม่สามารถคนหาตำแหน่งได้";
     }
 }
 function showPosition(position) {
     x.innerHTML = "Latitude: " + position.coords.latitude + 
     "<br>Longitude: " + position.coords.longitude;
 	document.getElementById("textinput").value = x.innerHTML;
+	document.getElementById("textinput1").value = position.coords.accuracy;
 }
 </script>
 </head> 
@@ -101,10 +103,12 @@ function showPosition(position) {
 		<h1>Page Three</h1>
 	</div>
 	<div data-role="content">	
-		<button onclick="getLocation()">ค้นหาพิกัด</button>
+		<button onclick="getLocation()">Button</button>
 	    <div data-role="fieldcontain">
 	      <label for="textinput">พิกัด:</label>
 	      <input type="text" name="textinput" id="textinput" value=""  />
+          <label for="textinput">accuracy:</label>
+	      <input type="text" name="textinput" id="textinput1" value=""  />
         </div>	
 	</div>
 	<div data-role="footer">
