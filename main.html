@@ -31,7 +31,7 @@ function showPosition(position) {
 	
    	document.getElementById("geo_pos").value = position.coords.latitude + 
     "," + position.coords.longitude;
-	document.getElementById("accu").value = (position.coords.accuracy)/1000 + " กิโลเมตร";
+	document.getElementById("accu").value = position.coords.accuracy;
 	var mapOption ={
 			center: new google.maps.LatLng(position.coords.latitude,position.coords.longitude),	
 			zoom: 15,
