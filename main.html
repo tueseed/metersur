@@ -33,11 +33,19 @@ function showPosition(position) {
 	document.getElementById("accu").value = position.coords.accuracy;
 	var mapOption ={
 			center: new google.maps.LatLng(position.coords.latitude,position.coords.longitude),	
-			zoom: 20,
+			zoom: 15,
 			mapTypeId: google.maps.MapTypeId.HYBRID		
 		}
+	var lat = position.coords.latitude;
+	var lon = position.coords.longitude;
+	var uluru = {lat:lat,lng:lon};
 	var map = new google.maps.Map(document.getElementById("map"),mapOption)
-	
+	var marker = new google.maps.Marker(
+	{
+		position: uluru,
+		map:map
+		}
+	)
 } 
 
 
