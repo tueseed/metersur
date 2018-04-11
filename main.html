@@ -18,7 +18,7 @@
 function getLocation() {
 	
     if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition);
+        navigator.geolocation.getCurrentPosition(showPosition,{time:0,enableHighAccuracy:true,maximumAge:Infinity});
     } else {
         
 		document.getElementById("geo_pos").value = "ไม่สามารถคนหาตำแหน่งได้";
@@ -33,7 +33,7 @@ function showPosition(position) {
 	document.getElementById("accu").value = position.coords.accuracy;
 	var mapOption ={
 			center: new google.maps.LatLng(position.coords.latitude,position.coords.longitude),	
-			zoom: 17,
+			zoom: 15,
 			mapTypeId: google.maps.MapTypeId.HYBRID		
 		}
 	var lat = position.coords.latitude;
