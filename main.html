@@ -19,7 +19,7 @@ function getLocation() {
 	
     if (navigator.geolocation) {
 		var option ={enableHighAccuracy: true,timeout: 5000,maximumAge: 0};
-        navigator.geolocation.getCurrentPosition(showPosition,option);
+        navigator.geolocation.getCurrentPosition(showPosition,error,option);
     } else {
         
 		document.getElementById("geo_pos").value = "ไม่สามารถคนหาตำแหน่งได้";
@@ -47,7 +47,10 @@ function showPosition(position) {
 		map:map
 		}
 	)
-} 
+}
+function error(){
+		document.getElementById("geo_pos").value = "ไม่สามารถคนหาตำแหน่งได้";
+		document.getElementById("accu").value = "ไม่สามารถคนหาตำแหน่งได้";} 
 
 
 //Function get lat long and put it in textbox
