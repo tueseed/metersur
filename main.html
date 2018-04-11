@@ -42,10 +42,7 @@ function showPosition(position) {
 	var uluru = {lat:lat,lng:lon};
 	var map = new google.maps.Map(document.getElementById("map"),mapOption)
 	var marker = new google.maps.Marker({position: uluru,map:map})
-	infoWindow = new google.maps.InfoWindow;
-	infoWindow.setPosition(uluru);
-    infoWindow.setContent('Location found.');
-    infoWindow.open(uluru);
+	
 }
 function error(){
 		document.getElementById("geo_pos").value = "ไม่สามารถคนหาตำแหน่งได้";
