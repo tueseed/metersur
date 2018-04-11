@@ -13,7 +13,7 @@
 function getLocation() {
 	
     if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition, { enableHighAccuracy: true });
+        navigator.geolocation.getCurrentPosition(showPosition);
     } else {
         
 		document.getElementById("geo_pos").value = "ไม่สามารถคนหาตำแหน่งได้";
