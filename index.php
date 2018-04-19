@@ -11,7 +11,10 @@
 <body> 
 <?php
 		require('./connect-db.php');
-		
+		$sql = "SELECT * FROM tbl_staff";
+		$query = mysqli_query($conn,$sql);
+		$objResult = mysqli_fetch_array($query);
+		echo $objResult;
 	?>
 <div data-role="page" id="page">
 	<div data-role="header">
