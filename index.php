@@ -15,7 +15,7 @@
 		$sql = "SELECT * FROM tbl_staff";
 		$query = mysqli_query($conn,$sql);
 		while($ofname = mysqli_fetch_array($query)){ 
-			echo $ofname;
+			echo $ofname['name'];
 		}
 	?>
 
