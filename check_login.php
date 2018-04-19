@@ -1,3 +1,8 @@
+<html>
+<head>
+<title>BMS:ระบบบริหารงบทำการ</title>
+</head>
+<body>
 <?php
 	require('./connect-db.php');
 	//session_start();
@@ -13,3 +18,5 @@ $r = "454123156231654";
 		//}
 	echo ";nmk;nnkjn";
 	?>
+</body>
+</html>
