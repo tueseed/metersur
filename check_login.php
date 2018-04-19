@@ -24,7 +24,7 @@
 				{
 				$_SESSION["NAME"] = $objResult["name"];
 				session_write_close();
-				header("location:main.html");
+				header("location:meter.html");
 				}
 	echo $U;
 	?>
