@@ -14,8 +14,9 @@
 		require('./connect-db.php');
 		$sql = "SELECT * FROM tbl_staff";
 		$query = mysqli_query($conn,$sql);
-		$objResult = mysqli_fetch_array($query);
-		echo $objResult."13218123161";
+		while($ofname = mysqli_fetch_array($query)){ 
+			echo $ofname;
+		}
 	?>
 
 </body>
