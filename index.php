@@ -9,7 +9,10 @@
 <script src="jquery.mobile-1.0.min.js" type="text/javascript"></script>
 </head> 
 <body> 
-
+<?php
+		require('./connect-db.php');
+		
+	?>
 <div data-role="page" id="page">
 	<div data-role="header">
 		<h1>Page One</h1>
