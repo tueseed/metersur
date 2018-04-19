@@ -11,5 +11,5 @@ $r = "454123156231654";
 		//while($ofname = mysqli_fetch_array($query)){ 
 		//	$ofname1 = $ofname["office_name"];
 		//}
-	echo $U.$P.$r;
+	echo $r;
 	?>
