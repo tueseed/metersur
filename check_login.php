@@ -1,7 +1,7 @@
 <!DOCTYPE html> 
 <html>
 <head>
-<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0," data-ajax="false" charset="utf-8">
 <title>Surwayer Web App</title>
 
 </head> 
