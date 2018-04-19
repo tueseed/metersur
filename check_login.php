@@ -1,6 +1,6 @@
 <?php
 	require('./connect-db.php');
-	session_start();
+	//session_start();
 	$U = $_POST['textuser'];
 	$P = $_POST['textpass'];
 $r = "454123156231654";
