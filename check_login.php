@@ -1,11 +1,14 @@
 <?php
-		require('./connect-db.php');
-	
-		$sql = "SELECT * FROM tbl_staff";
+	require('./connect-db.php');
+	session_start();
+	$U=$_POST['textuser'];
+	$P=$_POST['textpass'];
+		//$sql = "SELECT * FROM tbl_staff";
 		
-		$query_type = mysqli_query($conn,$sql_type);
+		//$query_type = mysqli_query($conn,$sql_type);
 		
-		while($ofname = mysqli_fetch_array($query)){ 
-			$ofname1 = $ofname["office_name"];
-		}
+		//while($ofname = mysqli_fetch_array($query)){ 
+		//	$ofname1 = $ofname["office_name"];
+		//}
+	echo $U.$P;
 	?>
