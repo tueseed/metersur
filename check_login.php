@@ -1,8 +1,8 @@
 <?php
 	require('./connect-db.php');
 	//session_start();
-	$U = $_POST['textuser'];
-	$P = $_POST['textpass'];
+	//$U = $_POST['textuser'];
+	//$P = $_POST['textpass'];
 $r = "454123156231654";
 		//$sql = "SELECT * FROM tbl_staff";
 		
