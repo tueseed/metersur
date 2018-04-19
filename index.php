@@ -15,7 +15,7 @@
 		<h1>Surwayer Web App</h1>
 	</div>
 	<div data-role="content">
-	 	<form action="check_login.php" method="post">
+	 	<form name="form1" action="check_login.php" method="post">
 	    <label for="textinput">ชื่อผู้ใช้งาน:</label>
 	    <input type="text" name="textuser" id="textuser" value=""  />
      	<label for="textinput">รหัสผ่าน:</label>
