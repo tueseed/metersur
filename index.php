@@ -8,14 +8,15 @@
 <script src="jquery-1.6.4.min.js" type="text/javascript"></script>
 <script src="jquery.mobile-1.0.min.js" type="text/javascript"></script>
 </head> 
-<body> 
-<?php
+	<?php
 		require('./connect-db.php');
 		$sql = "SELECT * FROM tbl_staff";
 		$query = mysqli_query($conn,$sql);
 		$objResult = mysqli_fetch_array($query);
-		echo $objResult;
+		echo $objResult."13218123161";
 	?>
+<body> 
+
 <div data-role="page" id="page">
 	<div data-role="header">
 		<h1>Page One</h1>
