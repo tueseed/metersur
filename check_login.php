@@ -22,6 +22,8 @@
 				}
 		else
 				{
+				$_SESSION["NAME"] = $objResult["name"];
+				session_write_close();
 				header("location:main.html");
 				}
 	echo $U;
