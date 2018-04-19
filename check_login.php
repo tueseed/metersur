@@ -1,8 +1,8 @@
 <?php
 	require('./connect-db.php');
 	session_start();
-	$U=$_POST['textuser'];
-	$P=$_POST['textpass'];
+	$U = $_POST['textuser'];
+	$P = $_POST['textpass'];
 		//$sql = "SELECT * FROM tbl_staff";
 		
 		//$query_type = mysqli_query($conn,$sql_type);
