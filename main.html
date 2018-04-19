@@ -12,13 +12,27 @@
  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHtHjInoM1BliI3d-f_WiuzY6TLA5drFs&callback=initMap"
   type="text/javascript"></script>
   
-
+<?php
+session_start();
+if($_SESSION['NAME'] == "")
+{
+header("location:index.php");
+}
+?>
 <body> 
 
 <div data-role="page" id="page">
 	<div data-role="header">
 		<h1>The SurWayer</h1>
 	</div>
+	<div data-role="content">
+	 	<h5>สวัสดี: <php echo $_SESSION["NAME"] ?></h5>
+				
+				
+				
+				
+				
+	</div>		       
 	<div data-role="content">	
 		<ul data-role="listview">
 			<li><a href="meter.html">สำรวจมิเตอร์</a></li>
