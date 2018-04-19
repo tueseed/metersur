@@ -12,13 +12,18 @@
 	$U = $_POST['textuser'];
 	$P = $_POST['textpass'];
 
-		//$sql = "SELECT * FROM tbl_staff";
-		
-		//$query_type = mysqli_query($conn,$sql_type);
-		
-		//while($ofname = mysqli_fetch_array($query)){ 
-		//	$ofname1 = $ofname["office_name"];
-		//}
+		$sql = "SELECT * FROM tbl_staff WHERE user = '".$U."' and pass = '".$P."'";
+		$result = mysqli_query($conn,$sql);
+		$objResult = mysqli_fetch_array($result);
+		if(!$objResult)
+				{
+			echo "ชื่อผู้ใช้ หรือรหัสผ่านไม่ถูกต้อง หรือไม่ได้ลงทะเบียน " ;
+			echo '<br>กลับสู่หน้า  <a href = "index.php"> เข้าสู่ระบบ </a>';
+				}
+		else
+				{
+				header("location:main.html");
+				}
 	echo $U;
 	?>
 	
