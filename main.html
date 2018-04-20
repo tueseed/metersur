@@ -59,14 +59,39 @@ div#map { margin: 0 auto 0 auto; }
 </style>
 </head> 
 <body onLoad="getLocation()"> 
-
-
-
 <div data-role="page" id="page">
 	<div data-role="header">
 		<h1>สำรวจมิเตอร์</h1>
 	</div>
 	<div data-role="content">	
+    	<h4>ข้อมูลผู้ใช้ไฟฟ้า :</h4>
+    	    	  <label for="cs_name">ชื่อผู้ใช้ไฟฟ้า:</label>
+    	  		  <input type="text" name="cs_name" id="cs_name" value=""  />
+                  
+  				  <label for="cs_lastname">นามกสุลผู้ใช้ไฟฟ้า:</label>
+    	  		  <input type="text" name="cs_lastname" id="cs_lastname" value=""  />
+                  
+                  <label for="cs_housenumber">บ้านเลขที่:</label>
+    	  		  <input type="text" name="cs_housenumber" id="cs_housenumber" value=""  />
+                  
+                  <label for="cs_moo">หมู่ที่:</label>
+    	  		  <input type="text" name="cs_moo" id="cs_moo" value=""  />
+                  
+                  <label for="cs_tombol">ตำบล:</label>
+    	  		  <input type="text" name="cs_tombol" id="cs_tombol" value=""  />
+                  
+                  <label for="cs_aumper">อำเภอ:</label>
+    	  		  <input type="text" name="cs_aumper" id="cs_aumper" value=""  />
+                  
+                  <label for="cs_province">จังหวัด:</label>
+    	  		  <input type="text" name="cs_province" id="cs_province" value=""  />
+                  
+                  <label for="cs_tel">เบอร์โทรศัพท์:</label>
+    	  		  <input type="text" name="cs_tel" id="cs_tel" value=""  />
+                  
+                  <label for="cs_reqnumber">คำร้องเลขที่:</label>
+    	  		  <input type="text" name="cs_reqnumber" id="cs_reqnumber" value=""  />
+        
 		<h4>ข้อมูลระบบไฟฟ้า :</h4>
             <h5>สถานีไฟฟ้าย่อย :</h5>
         		<select name="l_feedder" id="l_feedder">
@@ -162,8 +187,61 @@ div#map { margin: 0 auto 0 auto; }
 	<div id="map" style="text-align:center;width:80%;height:450px;background:yellow" ></div>
     <div data-role="content">	
 		<label for="textinput">อื่นๆ:</label>
-                <input type="text" name="textinput" id="textinput" value=""  />	
-	</div>
+        <input type="text" name="textinput" id="textinput" value=""  />
+     <h4>รายละเอียดอุปกรณ์การติดตั้ง :</h4>
+     <h5>สลักเกลียว(ชุด) :</h5>	
+     	<select name="bolt" id="bolt">
+                	<option value="option1">สลักเกลียว M16x170mm.</option>
+            		<option value="option2">สลักเกลียว M16x200mm.</option>
+                    <option value="option2">สลักเกลียว M16x250mm.</option>
+                    <option value="option2">สลักเกลียว M16x300mm.</option>
+                    <option value="option2">สลักเกลียว M16x350mm.</option>
+                    <option value="option2">สลักเกลียว M16x400mm.</option>
+            	</select>
+        <label for="textinput">จำนวน:</label>
+        <input type="tel" name="numbolt" id="numbolt" value=""  />
+	  <h5>แหวนสี่เหลี่ยมรองแบบเรียบ(อัน) :</h5>
+    	<label for="textinput">จำนวน:</label>
+        <input type="tel" name="square_ring" id="square_ring" value=""  />
+      <h5>ลวดอลูมิเนียมแบน 1x10 มม.(กก.) :</h5>
+    	<label for="textinput">จำนวน:</label>
+        <input type="tel" name="alu_tape" id="alu_tape" value=""  />
+       <h5>คอนเนคเตอร์บีบ H(อัน):</h5>
+    	  <select name="connector" id="connector">
+                	<option value="option1">35-50/6-10 ตร.มม.</option>
+            		<option value="option2">50-95/16-35 ตร.มม.</option>
+          </select> 
+    	  <label for="textinput">จำนวน:</label>
+          <input type="tel" name="num_connector" id="num_connector" value=""  />
+    	<h5>ตู้มิเตอร์:</h5>
+    	  <select name="box" id="box">
+                	<option value="option1">ตู้อลูมิเนียมใช้นอกอาคาร 3 เฟส</option>
+            		<option value="option2">ตู้พร้อม CT แรงต่ำ</option>
+          </select> 
+    	  <label for="textinput">จำนวน:</label>
+          <input type="tel" name="num_box" id="num_box" value=""  />
+    	<h5>สายไฟ(เมตร):</h5>
+    	  <select name="cu_wire" id="cu_wire">
+                	<option value="option1">สายทองแดงตีเกลียวหุ้มฉนวน 2x6 ต.มม. 600 Volt</option>
+            		<option value="option2">สายทองแดงตีเกลียวหุ้มฉนวน 2x10 ต.มม. 600 Volt</option>
+          </select> 
+    	  <label for="textinput">จำนวน:</label>
+          <input type="tel" name="num_cu_wire" id="num_cu_wire" value=""  />
+        <h5>ไม้แป้น(แผ่น):</h5>
+    	  <select name="plate" id="plate">
+                	<option value="option1">ไม้แป้นขนาด2x20x20ซม.</option>
+            		<option value="option2">ไม้แป้นขนาด2x20x60ซม.</option>
+                    <option value="option2">ไม้แป้นขนาด2x20x120ซม.</option>
+          </select> 
+    	  <label for="textinput">จำนวน:</label>
+          <input type="tel" name="num_cu_wire" id="num_cu_wire" value=""  />
+         <h5>ข้อมูลผู้สำรวจ:</h5>
+          <label for="textinput">ชื่อ-นามสกุล:</label>
+          <input type="text" name="sur_name" id="sur_name" value=""  />
+    </div>
+    <input type="submit" value="Submit!!">
+    
+    
     
 </div>
 
