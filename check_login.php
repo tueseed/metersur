@@ -24,7 +24,10 @@
 				{
 				$_SESSION["NAME"] = $objResult["name"];
 				session_write_close();
-				header("location:main.php");
+				//header("location:main.php");
+				<script>
+				window.location.href='main.php';
+				</script>
 				}
 	
 	?>
