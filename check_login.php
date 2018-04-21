@@ -6,7 +6,7 @@
 </head> 
 <body> 
 <?php
-	ob_start();
+	
 	require('./connect-db.php');
 	session_start();
 	$U = $_POST['textuser'];
@@ -26,7 +26,7 @@
 				session_write_close();
 				header("location:main.php");
 				}
-	ob_end_flush();
+	
 	?>
 	
 
