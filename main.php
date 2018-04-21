@@ -76,7 +76,7 @@ mysqli_query($conn,$sql_insert);
         		<form  name="form1" action="check_login.php" method="post">
     	    	  <label for="cs_name">ชื่อผู้ใช้ไฟฟ้า:</label>
     	  		  <input type="text" name="cs_name" id="cs_name" value=""  />
-                  
+                  </form>
   				  <label for="cs_lastname">นามกสุลผู้ใช้ไฟฟ้า:</label>
     	  		  <input type="text" name="cs_lastname" id="cs_lastname" value=""  />
                   
@@ -249,7 +249,7 @@ mysqli_query($conn,$sql_insert);
           <input type="text" name="surway_name" id="surway_name" value=""  />
     </div>
     <input type="submit" value="Submit!!">
-    </form>
+    
 </div>
 </body>
 </html>
