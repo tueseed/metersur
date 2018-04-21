@@ -71,12 +71,13 @@ mysqli_query($conn,$sql_insert);
 	<div data-role="header">
 		<h1>สำรวจมิเตอร์</h1>
 	</div>
+	<form  name="form1" action="check_login.php" method="post">
 	<div data-role="content">	
     	<h4>ข้อมูลผู้ใช้ไฟฟ้า :</h4>
-        		<form  name="form1" action="check_login.php" method="post">
+        		
     	    	  <label for="cs_name">ชื่อผู้ใช้ไฟฟ้า:</label>
     	  		  <input type="text" name="cs_name" id="cs_name" value=""  />
-                  </form>
+                  
   				  <label for="cs_lastname">นามกสุลผู้ใช้ไฟฟ้า:</label>
     	  		  <input type="text" name="cs_lastname" id="cs_lastname" value=""  />
                   
@@ -251,5 +252,6 @@ mysqli_query($conn,$sql_insert);
     <input type="submit" value="Submit!!">
     
 </div>
+</form>	
 </body>
 </html>
