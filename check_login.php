@@ -25,9 +25,9 @@
 				$_SESSION["NAME"] = $objResult["name"];
 				session_write_close();
 				//header("location:main.php");
-				<script>
-				window.location.href='https://metersurv.herokuapp.com/main.php';
-				</script>
+				echo '<script type="text/javascript">';
+      				echo 'window.location.href="main.php";';
+      				echo '</script>';
 				}
 	
 	?>
