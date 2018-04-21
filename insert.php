@@ -13,8 +13,8 @@
 require('./connect-db.php');
 $cs_name = $_POST['cs_name'];
 $cs_lastname = $_POST['cs_lastname'];
-//$sql_insert = "INSERT INTO tbl_jobmeter(cs_name)VALUES('$cs_name')";
-//mysqli_query($conn,$sql_insert);
+$sql_insert = "INSERT INTO tbl_jobmeter(cs_name)VALUES('$cs_name')";
+mysqli_query($conn,$sql_insert);
 
 ?>
 <div data-role="page" id="page">
