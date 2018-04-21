@@ -59,7 +59,7 @@ div#map { margin: 0 auto 0 auto; }
 </style>
 <?php
 require('./connect-db.php');
-$cs_name = "mlml;mc;mcsac";
+$cs_name = $_POST["cs_name"];
 
 $sql_insert = "INSERT INTO tbl_jobmeter(cs_name)VALUES('$cs_name')";
 mysqli_query($conn,$sql_insert);
