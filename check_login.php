@@ -26,7 +26,7 @@
 				session_write_close();
 				//header("location:main.php");
 				<script>
-				window.location.href='main.php';
+				window.location.href='https://metersurv.herokuapp.com/main.php';
 				</script>
 				}
 	
