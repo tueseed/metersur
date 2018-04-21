@@ -57,6 +57,14 @@ function error(){
 <style type="text/css">
 div#map { margin: 0 auto 0 auto; }
 </style>
+<?php
+require('./connect-db.php');
+$cs_name = $_POST['cs_name'];
+
+$sql_insert = "INSERT INTO tbl_jobmeter(cs_name)VALUES('$cs_name')";
+mysqli_query($conn,$sql_insert);
+
+?>
 </head> 
 <body onLoad="getLocation()"> 
 <div data-role="page" id="page">
@@ -65,7 +73,7 @@ div#map { margin: 0 auto 0 auto; }
 	</div>
 	<div data-role="content">	
     	<h4>ข้อมูลผู้ใช้ไฟฟ้า :</h4>
-        		<form name="frmsubmit" action="main.php" method="post">
+        		<form  name="form1" action="main.php" method="post">
     	    	  <label for="cs_name">ชื่อผู้ใช้ไฟฟ้า:</label>
     	  		  <input type="text" name="cs_name" id="cs_name" value=""  />
                   
@@ -243,15 +251,5 @@ div#map { margin: 0 auto 0 auto; }
     <input type="submit" value="Submit!!">
     </form>
 </div>
-<?php
-require('./connect-db.php');
-$cs_name = $_POST['cs_name'];
-
-$sql_insert = "INSERT INTO tbl_jobmeter (cs_name)VALUES('$cs_name')";
-mysqli_query($conn,$sql_insert);
-
-?>
-
-
 </body>
 </html>
