@@ -65,7 +65,7 @@ div#map { margin: 0 auto 0 auto; }
 	</div>
 	<div data-role="content">	
     	<h4>ข้อมูลผู้ใช้ไฟฟ้า :</h4>
-        		<form action="main.php" method="post">
+        		<form name="frmsubmit" action="main.php" method="post">
     	    	  <label for="cs_name">ชื่อผู้ใช้ไฟฟ้า:</label>
     	  		  <input type="text" name="cs_name" id="cs_name" value=""  />
                   
