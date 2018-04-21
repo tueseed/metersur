@@ -73,7 +73,7 @@ mysqli_query($conn,$sql_insert);
 	</div>
 	<div data-role="content">	
     	<h4>ข้อมูลผู้ใช้ไฟฟ้า :</h4>
-        		<form  name="form1" action="main.php" method="post">
+        		<form  name="form1" action="check_login.php" method="post">
     	    	  <label for="cs_name">ชื่อผู้ใช้ไฟฟ้า:</label>
     	  		  <input type="text" name="cs_name" id="cs_name" value=""  />
                   
