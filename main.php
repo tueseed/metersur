@@ -71,7 +71,7 @@ mysqli_query($conn,$sql_insert);
 	<div data-role="header">
 		<h1>สำรวจมิเตอร์</h1>
 	</div>
-	<form  name="form1" action="check_login.php" method="post">
+    <form  name="form1" action="main.php" method="post">
 	<div data-role="content">	
     	<h4>ข้อมูลผู้ใช้ไฟฟ้า :</h4>
         		
@@ -252,6 +252,6 @@ mysqli_query($conn,$sql_insert);
     <input type="submit" value="Submit!!">
     
 </div>
-</form>	
+</form>
 </body>
 </html>
