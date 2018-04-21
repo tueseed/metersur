@@ -25,7 +25,7 @@
 				session_write_close();
 				header("location:main.php");
 				}
-	echo $U;
+	
 	?>
 	
 
