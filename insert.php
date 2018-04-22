@@ -40,9 +40,11 @@ $num_box = $_POST['num_box'];
 $cu_wire = $_POST['cu_wire'];
 $num_cu_wire = $_POST['num_cu_wire'];
 $plate = $_POST['plate'];
+$num_plate = $_POST['num_plate'];
 $surway_name = $_POST['surway_name'];
 
-$sql_insert = "INSERT INTO tbl_jobmeter(cs_name,cs_lastname,cs_housenum,cs_moo,cs_tombol,cs_aumper,cs_province,cs_tel,cs_reqnumber,l_feedder,l_phase,cable_size,system_volt,amp_meter,cable_incoming,pole,num_meter,geo_pos,bolt,numbolt,square_ring,alu_tape,connector,num_connector,box,num_box,cu_wire,num_cu_wire,plate,surway_name)VALUES('$cs_name','$cs_lastname','$cs_housenum','$cs_moo','$cs_tombol','$cs_aumper','$cs_province','$cs_tel','$cs_reqnumber','$l_feedder','$l_phase','$cable_size','$system_volt','$amp_meter','$cable_incoming','$pole','$num_meter','$geo_pos','$bolt','$numbolt',$square_ring,'$alu_tape','$connector','$num_connector','$box','$num_box','$cu_wire','$num_cu_wire','$plate','$surway_name')";
+//$sql_insert = "INSERT INTO tbl_jobmeter(cs_name,cs_lastname,cs_housenum,cs_moo,cs_tombol,cs_aumper,cs_province,cs_tel,cs_reqnumber,l_feedder,l_phase,cable_size,system_volt,amp_meter,cable_incoming,pole,num_meter,geo_pos,bolt,numbolt,square_ring,alu_tape,connector,num_connector,box,num_box,cu_wire,num_cu_wire,plate,num_plate,surway_name)VALUES('$cs_name','$cs_lastname','$cs_housenum','$cs_moo','$cs_tombol','$cs_aumper','$cs_province','$cs_tel','$cs_reqnumber','$l_feedder','$l_phase','$cable_size','$system_volt','$amp_meter','$cable_incoming','$pole','$num_meter','$geo_pos','$bolt','$numbolt',$square_ring,'$alu_tape','$connector','$num_connector','$box','$num_box','$cu_wire','$num_cu_wire','$plate','$num_plate','$surway_name')";
+$sql_insert = "INSERT INTO tbl_jobmeter(cs_name,cs_lastname)VALUES('$cs_name','$cs_lastname')";
 mysqli_query($conn,$sql_insert);
 
 ?>
