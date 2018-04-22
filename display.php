@@ -11,6 +11,10 @@
 </head>
 <body>
 	<?php
+		echo "<table border='1' align='center' width='200'>";
+		echo "<tr align='center' bgcolor='#CCCCCC'>
+<td>เลขที่</td>
+</tr>";
 		while($row = mysqli_fetch_array($result))
 			{
 				echo "<tr align='center'>";
