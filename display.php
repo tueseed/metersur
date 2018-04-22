@@ -9,6 +9,7 @@
 		$resual = mysqli_query($conn,$sql_select);
 	?>
 </head>
+<body>
 	<?php
 		while($row = mysqli_fetch_array($result))
 			{
@@ -21,6 +22,5 @@
 			
 			}
 	?>
-<body>
 </body>
 </html>
