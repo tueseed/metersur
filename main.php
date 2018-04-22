@@ -1,7 +1,7 @@
 <!DOCTYPE html> 
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0," charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0," data-ajax="false" charset="utf-8">
 <title>Surwayer Web App</title>
 <link rel="stylesheet" href="icons.css">
 <link href="jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css"/>
@@ -98,86 +98,86 @@ div#map { margin: 0 auto 0 auto; }
 		<h4>ข้อมูลระบบไฟฟ้า :</h4>
             <h5>สถานีไฟฟ้าย่อย :</h5>
         		<select name="l_feedder" id="l_feedder">
-            		<option value="option1">เลือกฟีดเดอร์แรงต่ำ</option>
-            		<option value="option2">1</option>
-            		<option value="option3">2</option>
-                    <option value="option2">3</option>
-            		<option value="option3">4</option>
-                    <option value="option2">5</option>
-            		<option value="option3">6</option>
-                    <option value="option2">7</option>
-            		<option value="option3">8</option>
-                    <option value="option2">9</option>
-            		<option value="option3">10</option>
+            		<option value="เลือกฟีดเดอร์แรงต่ำ">เลือกฟีดเดอร์แรงต่ำ</option>
+            		<option value="1">1</option>
+            		<option value="2">2</option>
+                    <option value="3">3</option>
+            		<option value="4">4</option>
+                    <option value="5">5</option>
+            		<option value="6">6</option>
+                    <option value="7">7</option>
+            		<option value="8">8</option>
+                    <option value="9">9</option>
+            		<option value="10">10</option>
          		</select>
            		<select name="l_phase" id="l_phase">
                 	<option value="option1">เลือกเฟสแรงต่ำ</option>
-            		<option value="option1">A</option>
-            		<option value="option2">B</option>
-            		<option value="option3">C</option>
-                    <option value="option3">ABC</option>
+            		<option value="A">A</option>
+            		<option value="B">B</option>
+            		<option value="C">C</option>
+                    <option value="ABC">ABC</option>
          		</select>
              <h5>สายเมนแรงต่ำ :</h5>
              	<select name="cable_size" id="cable_size">
-                	<option value="option1" selected>เลือกขนาดสาย</option>
-                    <option value="option1">6 ตร.มม.</option>
-            		<option value="option2">10 ตร.มม.</option>
-            		<option value="option1">16 ตร.มม.</option>
-            		<option value="option2">25 ตร.มม.</option>
-                    <option value="option1">35 ตร.มม.</option>
-            		<option value="option2">50 ตร.มม.</option>
-                    <option value="option1">70 ตร.มม.</option>
-            		<option value="option2">95 ตร.มม.</option>
-                    <option value="option2">120 ตร.มม.</option>
+                	<option value="เลือกขนาดสาย" selected>เลือกขนาดสาย</option>
+                    <option value="6 ตร.มม.">6 ตร.มม.</option>
+            		<option value="10 ตร.มม.">10 ตร.มม.</option>
+            		<option value="16 ตร.มม.">16 ตร.มม.</option>
+            		<option value="25 ตร.มม.">25 ตร.มม.</option>
+                    <option value="35 ตร.มม.">35 ตร.มม.</option>
+            		<option value="50 ตร.มม.">50 ตร.มม.</option>
+                    <option value="70 ตร.มม.">70 ตร.มม.</option>
+            		<option value="95 ตร.มม.">95 ตร.มม.</option>
+                    <option value="120 ตร.มม.">120 ตร.มม.</option>
             	</select> 
                 <select name="system_dis" id="system_dis">
-                	<option value="option1">เลือกระบบ</option>
-            		<option value="option1">1 เฟส 2 สาย</option>
-            		<option value="option2">3 เฟส 4 สาย</option>
+                	<option value="เลือกระบบ">เลือกระบบ</option>
+            		<option value="1 เฟส 2 สาย">1 เฟส 2 สาย</option>
+            		<option value="3 เฟส 4 สาย">3 เฟส 4 สาย</option>
             	</select>
  			  <h5>ติดตั้งมิเตอร์ :</h5>
               	<select name="system_volt" id="system_volt">
-                	<option value="option1">เลือกระบบ-แรงดัน</option>
-            		<option value="option1"> 1 เฟส 2 สาย 220 โวลท์</option>
-            		<option value="option2">3 เฟส 4 สาย 220/380 โวลท์</option>
+                	<option value="เลือกระบบ-แรงดัน">เลือกระบบ-แรงดัน</option>
+            		<option value="1 เฟส 2 สาย 220 โวลท์">1 เฟส 2 สาย 220 โวลท์</option>
+            		<option value="3 เฟส 4 สาย 220/380 โวลท์">3 เฟส 4 สาย 220/380 โวลท์</option>
             	</select>
                 <select name="amp_meter" id="amp_meter">
-                	<option value="option1">เลือกขนาดมิเตอร์</option>
-            		<option value="option1">5(15) แอมป์</option>
-            		<option value="option2">15(45) แอมป์</option>
-                    <option value="option2">30(100) แอมป์</option>
+                	<option value="เลือกขนาดมิเตอร์">เลือกขนาดมิเตอร์</option>
+            		<option value="5(15) แอมป์">5(15) แอมป์</option>
+            		<option value="15(45) แอมป์">15(45) แอมป์</option>
+                    <option value="30(100) แอมป์">30(100) แอมป์</option>
             	</select>
                 <select name="cable_incoming" id="cable_incoming">
-                	<option value="option1">เลือกขนาสายแรงต่ำเข้ามิเตอร์</option>
-            		<option value="option1">6 ตร.มม.</option>
-            		<option value="option2">10 ตร.มม.</option>
-            		<option value="option1">16 ตร.มม.</option>
-            		<option value="option2">25 ตร.มม.</option>
-                    <option value="option1">35 ตร.มม.</option>
-            		<option value="option2">50 ตร.มม.</option>
-                    <option value="option1">70 ตร.มม.</option>
-            		<option value="option2">95 ตร.มม.</option>
+                	<option value="เลือกขนาสายแรงต่ำเข้ามิเตอร์">เลือกขนาสายแรงต่ำเข้ามิเตอร์</option>
+            		<option value="6 ตร.มม.">6 ตร.มม.</option>
+            		<option value="10 ตร.มม.">10 ตร.มม.</option>
+            		<option value="16 ตร.มม.">16 ตร.มม.</option>
+            		<option value="25 ตร.มม.">25 ตร.มม.</option>
+                    <option value="35 ตร.มม.">35 ตร.มม.</option>
+            		<option value="50 ตร.มม.">50 ตร.มม.</option>
+                    <option value="70 ตร.มม.">70 ตร.มม.</option>
+            		<option value="95 ตร.มม.">95 ตร.มม.</option>
                 </select>
                	<select name="pole" id="pole">
-                	<option value="option1">เลือกเสา</option>
-                    <option value="option1">6 เมตร</option>
-            		<option value="option1">8 เมตร</option>
-            		<option value="option2">9 เมตร</option>
-                    <option value="option2">12 เมตร</option>
-                    <option value="option2">12.20 เมตร</option>
-                    <option value="option2">14 เมตร</option>
-                    <option value="option2">14.30 เมตร</option>
+                	<option value="เลือกเสา">เลือกเสา</option>
+                    <option value="6 เมตร">6 เมตร</option>
+            		<option value="8 เมตร">8 เมตร</option>
+            		<option value="9 เมตร">9 เมตร</option>
+                    <option value="12 เมตร">12 เมตร</option>
+                    <option value="12.20 เมตร">12.20 เมตร</option>
+                    <option value="14 เมตร">14 เมตร</option>
+                    <option value="14.30 เมตร">14.30 เมตร</option>
             	</select>
                 <select name="num_meter" id="num_meter">
-                	<option value="option1">มิเตอร์เครื่องที่</option>
-            		<option value="option1">เครื่องที่ 1</option>
-            		<option value="option2">เครื่องที่ 2</option>
-                    <option value="option2">เครื่องที่ 3</option>
-                    <option value="option2">เครื่องที่ 4</option>
-                    <option value="option2">เครื่องที่ 5</option>
-                    <option value="option2">เครื่องที่ 6</option>
-                    <option value="option2">เครื่องที่ 7</option>
-                    <option value="option2">เครื่องที่8</option>
+                	<option value="มิเตอร์เครื่องที่">มิเตอร์เครื่องที่</option>
+            		<option value="เครื่องที่ 1">เครื่องที่ 1</option>
+            		<option value="เครื่องที่ 2">เครื่องที่ 2</option>
+                    <option value="เครื่องที่ 3">เครื่องที่ 3</option>
+                    <option value="เครื่องที่ 4">เครื่องที่ 4</option>
+                    <option value="เครื่องที่ 5">เครื่องที่ 5</option>
+                    <option value="เครื่องที่ 6">เครื่องที่ 6</option>
+                    <option value="เครื่องที่ 7">เครื่องที่ 7</option>
+                    <option value="เครื่องที่ 8">เครื่องที่ 8</option>
             	</select>
                 <label for="textinput">พิกัดตำแหน่ง :<a href="javascript:getLocation();">  ค้นหาตำแหน่ง</a></label>
       			<input name="geo_pos" id="geo_pos" type="text">
@@ -194,12 +194,12 @@ div#map { margin: 0 auto 0 auto; }
      <h4>รายละเอียดอุปกรณ์การติดตั้ง :</h4>
      <h5>สลักเกลียว(ชุด) :</h5>	
      	<select name="bolt" id="bolt">
-                	<option value="option1">สลักเกลียว M16x170mm.</option>
-            		<option value="option2">สลักเกลียว M16x200mm.</option>
-                    <option value="option2">สลักเกลียว M16x250mm.</option>
-                    <option value="option2">สลักเกลียว M16x300mm.</option>
-                    <option value="option2">สลักเกลียว M16x350mm.</option>
-                    <option value="option2">สลักเกลียว M16x400mm.</option>
+                	<option value="สลักเกลียว M16x170mm.">สลักเกลียว M16x170mm.</option>
+            		<option value="สลักเกลียว M16x200mm.">สลักเกลียว M16x200mm.</option>
+                    <option value="สลักเกลียว M16x250mm.">สลักเกลียว M16x250mm.</option>
+                    <option value="สลักเกลียว M16x300mm.">สลักเกลียว M16x300mm.</option>
+                    <option value="สลักเกลียว M16x350mm.">สลักเกลียว M16x350mm.</option>
+                    <option value="สลักเกลียว M16x400mm.">สลักเกลียว M16x400mm.</option>
             	</select>
         <label for="textinput">จำนวน:</label>
         <input type="tel" name="numbolt" id="numbolt" value=""  />
@@ -211,30 +211,30 @@ div#map { margin: 0 auto 0 auto; }
         <input type="tel" name="alu_tape" id="alu_tape" value=""  />
        <h5>คอนเนคเตอร์บีบ H(อัน):</h5>
     	  <select name="connector" id="connector">
-                	<option value="option1">35-50/6-10 ตร.มม.</option>
-            		<option value="option2">50-95/16-35 ตร.มม.</option>
+                	<option value="35-50/6-10 ตร.มม.">35-50/6-10 ตร.มม.</option>
+            		<option value="50-95/16-35 ตร.มม.">50-95/16-35 ตร.มม.</option>
           </select> 
     	  <label for="textinput">จำนวน:</label>
           <input type="tel" name="num_connector" id="num_connector" value=""  />
     	<h5>ตู้มิเตอร์:</h5>
     	  <select name="box" id="box">
-                	<option value="option1">ตู้อลูมิเนียมใช้นอกอาคาร 3 เฟส</option>
-            		<option value="option2">ตู้พร้อม CT แรงต่ำ</option>
+                	<option value="ตู้อลูมิเนียมใช้นอกอาคาร 3 เฟส">ตู้อลูมิเนียมใช้นอกอาคาร 3 เฟส</option>
+            		<option value="ตู้พร้อม CT แรงต่ำ">ตู้พร้อม CT แรงต่ำ</option>
           </select> 
     	  <label for="textinput">จำนวน:</label>
           <input type="tel" name="num_box" id="num_box" value=""  />
     	<h5>สายไฟ(เมตร):</h5>
     	  <select name="cu_wire" id="cu_wire">
-                	<option value="option1">สายทองแดงตีเกลียวหุ้มฉนวน 2x6 ต.มม. 600 Volt</option>
-            		<option value="option2">สายทองแดงตีเกลียวหุ้มฉนวน 2x10 ต.มม. 600 Volt</option>
+                	<option value="สายทองแดงตีเกลียวหุ้มฉนวน 2x6 ต.มม. 600 Volt">สายทองแดงตีเกลียวหุ้มฉนวน 2x6 ต.มม. 600 Volt</option>
+            		<option value="สายทองแดงตีเกลียวหุ้มฉนวน 2x10 ต.มม. 600 Volt">สายทองแดงตีเกลียวหุ้มฉนวน 2x10 ต.มม. 600 Volt</option>
           </select> 
     	  <label for="textinput">จำนวน:</label>
           <input type="tel" name="num_cu_wire" id="num_cu_wire" value=""  />
         <h5>ไม้แป้น(แผ่น):</h5>
     	  <select name="plate" id="plate">
-                	<option value="option1">ไม้แป้นขนาด2x20x20ซม.</option>
-            		<option value="option2">ไม้แป้นขนาด2x20x60ซม.</option>
-                    <option value="option2">ไม้แป้นขนาด2x20x120ซม.</option>
+                	<option value="ไม้แป้นขนาด2x20x20ซม.">ไม้แป้นขนาด2x20x20ซม.</option>
+            		<option value="ไม้แป้นขนาด2x20x60ซม.">ไม้แป้นขนาด2x20x60ซม.</option>
+                    <option value="ไม้แป้นขนาด2x20x120ซม.">ไม้แป้นขนาด2x20x120ซม.</option>
           </select> 
     	  <label for="textinput">จำนวน:</label>
           <input type="tel" name="num_plate" id="num_plate" value=""  />
