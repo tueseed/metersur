@@ -55,17 +55,17 @@ mysqli_query($conn,$sql_insert);
 	</div>
 	<div data-role="content">	
 			<?php
-			echo "<div>";
-			echo "<h4><b><u>ข้อมูลผู้ใช้ไฟฟ้า :<u><b></h4><br>";
+			
+			echo "<h4><b><u>ข้อมูลผู้ใช้ไฟฟ้า :</u></b></h4><br>";
 			echo "<h5>".$cs_name." ".$cs_lastname."<br>";
 			echo "ที่อยู่ :<br>";
 			echo $cs_housenum." ".$cs_moo." ".$cs_tombol." ".$cs_aumper." ".$cs_province." ".$cs_tel."<br><br>";
-			echo "เลขที่คำร้อง :"." ".$cs_reqnumber."</h5><br><br>";
-			echo "</div>";
-			echo "<h4>ข้อมูละบบไฟฟ้า :</h4><br>";
+			echo "เลขที่คำร้อง :"." ".$cs_reqnumber."</h5><br>";
+			
+			echo "<h4><b><u>ข้อมูละบบไฟฟ้า :</u></b></h4><br>";
 			echo "<h5>สถานีไฟฟ้าย่อย :<br>";
-			echo "ฟีดเดอร์แรงต่ำ ".$l_feedder;
-			echo "เฟสแรงต่ำ ".$l_phase;
+			echo "ฟีดเดอร์แรงต่ำ ".$l_feedder."<br>";
+			echo "เฟสแรงต่ำ ".$l_phase."<br>";
 			echo "สายเมนแรงต่ำ :<br>";
 			echo "ขนาด ".$cable_size."<br>";
 			echo "ระบบ ".$system_dis."<br>";
@@ -75,10 +75,10 @@ mysqli_query($conn,$sql_insert);
 			echo "สายแรงต่ำเข้ามิเตอร์ ".$cable_incoming."<br>";
 			echo "เสา ".$pole."<br>";
 			echo "มิเตอร์ ".$num_meter."<br>";
-			echo "<a href='https://www.google.co.th/maps/search/".$geo_pos."'>พิกัด</a></h5><br><br>";
+			echo "<a href='https://www.google.co.th/maps/search/".$geo_pos."' class='button'>พิกัด</a></h5><br>";
 			
 			
-			echo "<h4>รายละเอียดอุปกรร์การติดตั้ง :</h4><br>";
+			echo "<h4><b><u>รายละเอียดอุปกรร์การติดตั้ง :</u></b></h4><br>";
 			echo "<h5>สลักเกลียว ".$bolt."<br>";
 			echo "จำนวน ".$numbolt." ชุด<br>";
 			echo "แหวนสี่เหลี่ยมแบบเรียบ ".$square_ring." อัน<br>";
