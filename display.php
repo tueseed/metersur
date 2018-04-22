@@ -13,7 +13,7 @@
 		while($row = mysqli_fetch_array($result))
 			{
 				echo "<tr align='center'>";
-				echo "<td>".$row['cs_name']."</td>";
+				echo "<td>".$row["cs_name"]."</td>";
 				echo "</tr>";
 			
 			
