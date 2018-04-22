@@ -6,7 +6,7 @@
 	<?php
 		require('./connect-db.php');
 		$sql_select = "SELECT * FROM tbl_jobmeter";
-		$resual = mysqli_query($conn,$sql_select);
+		$result = mysqli_query($conn,$sql_select);
 	?>
 </head>
 <body>
