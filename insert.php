@@ -55,12 +55,13 @@ mysqli_query($conn,$sql_insert);
 	</div>
 	<div data-role="content">	
 			<?php
-			echo "<h4>ข้อมูลผู้ใช้ไฟฟ้า :</h4>><br>";
-			echo "<h5>".$cs_name." ".$cs_lastname."<br><br>";
+			echo "<div>";
+			echo "<h4><b><u>ข้อมูลผู้ใช้ไฟฟ้า :<u><b></h4><br>";
+			echo "<h5>".$cs_name." ".$cs_lastname."<br>";
 			echo "ที่อยู่ :<br>";
 			echo $cs_housenum." ".$cs_moo." ".$cs_tombol." ".$cs_aumper." ".$cs_province." ".$cs_tel."<br><br>";
 			echo "เลขที่คำร้อง :"." ".$cs_reqnumber."</h5><br><br>";
-			
+			echo "</div>";
 			echo "<h4>ข้อมูละบบไฟฟ้า :</h4><br>";
 			echo "<h5>สถานีไฟฟ้าย่อย :<br>";
 			echo "ฟีดเดอร์แรงต่ำ ".$l_feedder;
