@@ -58,7 +58,7 @@ mysqli_query($conn,$sql_insert);
 			echo "ที่อยู่ :<br>";
 			echo $cs_housenum." ".$cs_moo." ".$cs_tombol." ".$cs_aumper." ".$cs_province." ".$cs_tel."<br><br>";
 			echo "เลขที่คำร้อง :"." ".$cs_reqnumber;
-			echo "รายละเอียดระบบไฟฟ้า :<br>";
+			echo "รายละเอียดระบบไฟฟ้า :<br>".$l_phase.$num_meter;
 			
 			?>	
 	</div>
