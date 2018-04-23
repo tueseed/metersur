@@ -18,7 +18,7 @@ function OpenPopup(cs_reqnumber)
 </head>
 <body>
 	<?php
-		echo "<table border='0' align='center' width='900'>";
+		echo "<table border='1' style='solid' align='center' width='900'>";
 		echo "<tr align='center' bgcolor='#CCCCCC'>
 <td>ชื่อผู้ใช้ไฟฟ้า</td>
 <td>เลขที่คำร้อง</td>
