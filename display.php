@@ -26,7 +26,7 @@ function OpenPopup(cs_reqnumber)
 			{
 				echo "<tr align='center'>";
 				echo "<td>".$row["cs_name"]."</td>";
-	echo "<td><input type='button' name='button' id='button' value='...' onclick='OpenPopup(JPTM)'></td> ";
+	echo "<td><input type='button' name='button' id='button' value='...' onclick='OpenPopup(".$row["l_feedder"].")'></td> ";
 				echo "</tr>";
 			
 			
