@@ -10,8 +10,14 @@ $cs_reqnumber = $_GET['cs_reqnumber'];
 require('./connect-db.php');
 		$sql_search = "SELECT * FROM tbl_jobmeter WHERE (cs_number LIKE '%".$cs_reqnumber."%')";
 		$result = mysqli_query($conn,$sql_search);
-		$objectresult = mysqli_fetch_array($result);
-echo $objectresult["cs_name"];
+		
+		while($objectresult = mysqli_fetch_array($result))
+		{
+			echo $objectresult["cs_name"];
+			
+			
+			}
+		
 ?>
 </body>
 </html>
