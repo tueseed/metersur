@@ -28,7 +28,8 @@ function OpenPopup(cs_reqnumber)
 				echo "<tr align='center'>";
 				echo "<td>".$row["cs_name"]."</td>";
 				echo "<td>".$row["cs_reqnumber"]."</td>";
-	echo "<td><input type='button' name='button' id='button' value='...' onclick='OpenPopup(".$row["cs_reqnumber"].")'></td> ";
+	//echo "<td><input type='button' name='button' id='button' value='...' onclick='OpenPopup(".$row["cs_reqnumber"].")'></td> ";
+				echo "<td><a href='esform.php?cs_number=".$row["cs_reqnumber"]."'>แบบฟอร์ม</a></td>";
 				echo "</tr>";
 			
 			
