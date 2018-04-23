@@ -6,7 +6,8 @@
 <script language="javascript">
 function OpenPopup(cs_reqnumber)
 	{
-		window.location.href="esform.php?cs_reqnumber="+cs_reqnumber;
+		//window.location.href="esform.php?cs_reqnumber="+cs_reqnumber;
+		window.open('esform.php?cs_reqnumber='+cs_reqnumber);
 	}
 </script>
 	<?php
@@ -25,7 +26,7 @@ function OpenPopup(cs_reqnumber)
 			{
 				echo "<tr align='center'>";
 				echo "<td>".$row["cs_name"]."</td>";
-				echo "<td><input type='button' name='button' id='button' value='...' onclick='OpenPopup(".$row["cs_reqnumber"].")'></td> ";
+	echo "<td><input type='button' name='button' id='button' value='...' onclick='OpenPopup(JPTMCS)'></td> ";
 				echo "</tr>";
 			
 			
