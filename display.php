@@ -4,11 +4,9 @@
 <meta charset="utf-8">
 <title>SDCI-Surwayors|Designer|Constructor|Inspector</title>
 <script language="javascript">
-function OpenPopup(NUMBER)
+function OpenPopup(cs_reqnumber)
 	{
-		var left = (screen.width/2)-(1000/2);
-        var top = (screen.height/2)-(300/2);
-		window.open('show.php?NUMBER='+NUMBER,'myPopup','width=1000,height=300,toolbar=0, menubar=0,location=0,status=1,scrollbars=1,resizable=1,left='+left+',top='+top);
+		window.location.href="esform.php?cs_reqnumber="+cs_reqnumber;
 	}
 </script>
 	<?php
