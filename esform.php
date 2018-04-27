@@ -15,7 +15,8 @@ require('./connect-db.php');
 		echo "<table border='1' cellspacing='0' align='center' width='900'>
 			 	<tr align='center' bgcolor='#CCCCCC'>
 			  		<td>ชื่อผู้ขอใช้ไฟ ".$objectresult["cs_name"]."</td>
-					<td>ที่อยู่ :".$objectresult["cs_housenum"]."</td>";
+					<td>ที่อยู่ :".$objectresult["cs_housenum"]."</td>
+					<td>เบอร์โทร :".$objectresult["cs_tel"]."</td>";
 		
 			
 			
