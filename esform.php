@@ -10,7 +10,7 @@ $cs_reqnumber = $_GET['cs_reqnumber'];
 require('./connect-db.php');
 		$sql_search = "SELECT * FROM tbl_jobmeter WHERE (cs_reqnumber LIKE '%".$cs_reqnumber."%')";
 		$result = mysqli_query($conn,$sql_search);
-	   echo "<h1>รายละเอียดอุปกรณ์ประกอบมิเตอร์</h1><br>";
+	   echo "<h1 align='center'>รายละเอียดอุปกรณ์ประกอบมิเตอร์</h1><br>";
 		$objectresult = mysqli_fetch_array($result);
 		echo "<table border='1' cellspacing='0' align='center' width='900'>
 			 	<tr align='center' bgcolor='#CCCCCC'>
