@@ -6,6 +6,8 @@
 <script src="./jquery-3.3.1.min.js"></script>
 </head>
 <body>
-<h2>ลงทะเบียนผู้จัดการ</h2>
+	<div class="container-fluid">
+		<h2>ลงทะเบียนผู้จัดการ</h2>
+	</div>
 </body>
 </html>
