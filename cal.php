@@ -28,6 +28,7 @@
         $price = $objResult["pri"];
         $num_pole_1 = $_POST["num_pole_1"];
         $total = $price*$num_pole_1;
+        
         ?>
         <table data-role="table" id="temp-table" data-mode="reflow" class="ui-responsive table-stroke">
         <thead>
@@ -40,10 +41,10 @@
         </thead>
         <tbody>
             <tr>
-                <td><?php echo $_POST["pole_1"]; ?></td>
-                <td><?php $_POST["num_pole_1"]; ?></td>
-                <td><?php $price; ?></td>
-                <td><?php $total; ?></td>
+                <td><?php echo $objResult["mat_name"]; ?></td>
+                <td><?php echo $_POST["num_pole_1"]; ?></td>
+                <td><?php echo $price; ?></td>
+                <td><?php echo $total; ?></td>
 
             </tr>
         </tbody
