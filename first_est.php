@@ -10,7 +10,7 @@
 </head> 
 <body> 
 <?php
-//require('connect-db.php');
+require('./connect-db.php');
 ?>
 <div data-role="page" id="page">
 	<div data-role="header">
