@@ -30,7 +30,7 @@
         $total = $price*$num_pole_1;
         
         ?>
-        <table data-role="table" id="temp-table" data-mode="reflow" class="ui-responsive table-stroke">
+        <table align="center" data-role="table" id="temp-table" data-mode="reflow" class="ui-responsive table-stroke">
         <thead>
             <tr>
                 <th>รายการ</th>
