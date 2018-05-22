@@ -11,10 +11,11 @@
 <body> 
 <?php
 require('./connect-db.php');
-$cs_name = $_POST["cs_name"];
-$req_number = $_POST["req_num"];
-$addr = $_POST["addr"];
-$cs_tel = $_POST["cs_tel"];
+session_start();
+$_SESSION["cs_name"] = $_POST["cs_name"];
+$_SESSION["req_num"] = $_POST["req_num"];
+$_SESSION["addr"] = $_POST["addr"];
+$_SESSION["cs_tel"] = $_POST["cs_tel"];
 ?>
 <div data-role="page" id="page">
 	<div data-role="header">
@@ -24,10 +25,10 @@ $cs_tel = $_POST["cs_tel"];
     <form name="pole-add-form" id="pole-add-form" method="POST">
         <div>
                 <?php
-                echo "<h3>ชื่อลูกค้า ".$cs_name."</h3><br>";
-                echo "<h3>เลขที่คำร้อง ".$req_number."</h3><br>";
-                echo "<h3>ที่อยู่ ".$addr."</h3><br>";
-                echo "<h3>เบอร์โทรติดต่อ ".$cs_tel."</h3><br>";
+                echo "ชื่อลูกค้า ".$_SESSION["cs_name"]."<br>";
+                echo "เลขที่คำร้อง ".$_SESSION["req_num"]."<br>";
+                echo "ที่อยู่ ".$_SESSION["addr"]."<br>";
+                echo "เบอร์โทรติดต่อ ".$_SESSION["cs_tel"]."<br>";
                 ?>
         </div>
         <div data-role="collapsible-set" data-content-theme="d" id="set">
