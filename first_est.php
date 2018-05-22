@@ -23,7 +23,7 @@
                     <select name="pole_1" id="pole_1">
                         <option value="N/A">เลือกเสา</option>
                         <?php
-                            $sql_pole = "SELECT * FROM tbl_price WHERE type = 'p'";
+                            $sql_pole = "SELECT * FROM tbl_price";
                             $result = mysqli_query($conn,$sql_pole);
                             while($objResult = mysqli_fetch_array($result);){
                                 echo "<option value='".$objResult["mat_id"]."'>".$objResult["mat_name"]."</option>";
