@@ -30,7 +30,15 @@
         $total = $price*$num_pole_1;
         echo $objResult["mat_name"]." จำนวน ".$num_pole_1." หน่วยละ ".$price." คิดเป็นเงิน ".$total." บาท";
         ?>
-    </div>   
+        <table data-role="table" id="temp-table" data-mode="reflow" class="ui-responsive table-stroke">
+        <thead>
+            <tr>
+                <th>รายการ</th>
+                <th>จำนวน</th>
+            </tr>
+        </table>
+    </div> 
+      
 </div>
 
 </body>
