@@ -20,7 +20,7 @@
                 <option value="8">8 เมตร</option>
                 <option value="9">9 เมตร</option>
                 <option value="12">12 เมตร</option>
-                <option value=12.20>12.20 เมตร</option>
+                <option value="12.20">12.20 เมตร</option>
                 <option value="14">14 เมตร</option>
                 <option value="14.30">14.30 เมตร</option>
             </select><!--เฟส-->
@@ -33,7 +33,7 @@
                 <option value="8">8 เมตร</option>
                 <option value="9">9 เมตร</option>
                 <option value="12">12 เมตร</option>
-                <option value=12.20>12.20 เมตร</option>
+                <option value="12.20">12.20 เมตร</option>
                 <option value="14">14 เมตร</option>
                 <option value="14.30">14.30 เมตร</option>
             </select><!--เฟส-->
@@ -46,12 +46,65 @@
                 <option value="8">8 เมตร</option>
                 <option value="9">9 เมตร</option>
                 <option value="12">12 เมตร</option>
-                <option value=12.20>12.20 เมตร</option>
+                <option value="12.20">12.20 เมตร</option>
                 <option value="14">14 เมตร</option>
                 <option value="14.30">14.30 เมตร</option>
             </select><!--เฟส-->
         <legend >จำนวน:</legend>
             <input type="tel" name="num_pole_3" id="num_pole_3" value=""/>
+        
+        <legend>อุปกรณ์หัวเสา 1:</legend>
+            <select name="head_1" id="head_1">
+                <option value="N/A">หัวเสา 1</option>
+                <option value="CTB เสา12 (เคบิล)0-5">CTB เสา12 (เคบิล)0-5</option>
+                <option value="อุปกรณ์ CTB เสา14 (เคบิล)0-5">อุปกรณ์ CTB เสา14 (เคบิล)0-5</option>
+                <option value="อุปกรณ์ CCB (เคบิล) 60">อุปกรณ์ CCB (เคบิล) 60</option>
+                <option value="อุปกรณ์ CCB (เคบิล) 90">อุปกรณ์ CCB (เคบิล) 90</option>
+                <option value="อุปกรณ์ 3 เฟส DDE">อุปกรณ์ 3 เฟส DDE</option>
+            </select><!--เฟส-->
+        <legend >จำนวน:</legend>
+            <input type="tel" name="num_head_1" id="num_head_1" value=""/>
+        
+        <legend>อุปกรณ์หัวเสา 2:</legend>
+            <select name="head_2" id="head_1">
+                <option value="N/A">หัวเสา 1</option>
+                <option value="CTB เสา12 (เคบิล)0-5">CTB เสา12 (เคบิล)0-5</option>
+                <option value="อุปกรณ์ CTB เสา14 (เคบิล)0-5">อุปกรณ์ CTB เสา14 (เคบิล)0-5</option>
+                <option value="อุปกรณ์ CCB (เคบิล) 60">อุปกรณ์ CCB (เคบิล) 60</option>
+                <option value="อุปกรณ์ CCB (เคบิล) 90">อุปกรณ์ CCB (เคบิล) 90</option>
+                <option value="อุปกรณ์ 3 เฟส DDE">อุปกรณ์ 3 เฟส DDE</option>
+            </select><!--เฟส-->
+        <legend >จำนวน:</legend>
+            <input type="tel" name="num_head_2" id="num_head_2" value=""/>
+        <legend >สาย 1:</legend>
+            <select name="wire_1" id="wire_1">
+                <option value="N/A">เลือกสาย</option>
+                <option value="สาย 95 A">สาย 95 A</option>
+                <option value="สาย 185 A">สาย 185 A</option>
+                <option value="สาย 50 ACSR">สาย 50 ACSR</option>
+                <option value="สายเคเบิลอากาศ 50 SAC">สายเคเบิลอากาศ 50 SAC</option>
+                <option value="สายเคเบิลอากาศ 185 SAC">สายเคเบิลอากาศ 185 SAC</option>
+                <option value="สาย 50 PIC">สาย 50 PIC</option>
+                <option value="สาย 120 PIC">สาย 120 PIC</option>
+                <option value="สาย 185 PIC">สาย 185 PIC</option>
+            </select><!--เฟส-->
+        <legend >จำนวน:</legend>
+            <input type="tel" name="num_wire_1" id="num_wire_1" value=""/>
+
+        <legend >สาย 2:</legend>
+            <select name="wire_2" id="wire_2">
+                <option value="N/A">เลือกสาย</option>
+                <option value="สาย 95 A">สาย 95 A</option>
+                <option value="สาย 185 A">สาย 185 A</option>
+                <option value="สาย 50 ACSR">สาย 50 ACSR</option>
+                <option value="สายเคเบิลอากาศ 50 SAC">สายเคเบิลอากาศ 50 SAC</option>
+                <option value="สายเคเบิลอากาศ 185 SAC">สายเคเบิลอากาศ 185 SAC</option>
+                <option value="สาย 50 PIC">สาย 50 PIC</option>
+                <option value="สาย 120 PIC">สาย 120 PIC</option>
+                <option value="สาย 185 PIC">สาย 185 PIC</option>
+            </select><!--เฟส-->
+        <legend >จำนวน:</legend>
+            <input type="tel" name="num_wire_2" id="num_wire_2" value=""/>
     </div>   
 </div>
 
