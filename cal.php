@@ -24,10 +24,10 @@
         echo "เบอร์โทรติดต่อ ".$_SESSION["cs_tel"]."<br><br>";
         $sql_pole_1 = "SELECT * FROM tbl_price WHERE mat_id =".$_POST["pole_1"];
         $pole_1_query = mysqli_query($conn,$sql_pole_1);
-        $objResult = mysqli_fetch_array($pole_1_query)
+        $objResult = mysqli_fetch_array($pole_1_query);
         $price = $objResult["price"];
         $num_pole_1 = $_POST["num_pole_1"];
-        $total = $price*$num_pole_1
+        $total = $price*$num_pole_1;
         echo $objResult["mat_name"]." ".$total;
         ?>
     </div>   
