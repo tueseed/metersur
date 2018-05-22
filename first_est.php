@@ -15,12 +15,30 @@
 	</div>
     <div data-role="content"> 
         <fieldset data-role="controlgroup">
-            <legend class="txt-in">เสา:</legend>
-            <select name="phase" id="phase" onchange="select_head_ht(this.value)">
-                <option value="N/A">เฟส</option>
-                <option value="1">1 เฟส</option>
-                <option value="3">3 เฟส</option>
+            <legend class="txt-in">เสา 1:</legend>
+            <select name="pole_1" id="pole_1">
+                <option value="N/A">เลือกเสา</option>
+                <option value="8">8 เมตร</option>
+                <option value="9">9 เมตร</option>
+                <option value="12">12 เมตร</option>
+                <option value=12.20>12.20 เมตร</option>
+                <option value="14">14 เมตร</option>
+                <option value="14.30">14.30 เมตร</option>
             </select><!--เฟส-->
+            <input type="tel" name="num_pole_1" id="num_pole_1" value=""/>
+        </fieldset>
+        <fieldset data-role="controlgroup">
+            <legend class="txt-in">เสา 2:</legend>
+            <select name="pole_1" id="pole_1">
+                <option value="N/A">เลือกเสา</option>
+                <option value="8">8 เมตร</option>
+                <option value="9">9 เมตร</option>
+                <option value="12">12 เมตร</option>
+                <option value=12.20>12.20 เมตร</option>
+                <option value="14">14 เมตร</option>
+                <option value="14.30">14.30 เมตร</option>
+            </select><!--เฟส-->
+            <input type="tel" name="num_pole_1" id="num_pole_1" value=""/>
         </fieldset>
     </div>   
 </div>
