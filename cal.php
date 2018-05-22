@@ -28,14 +28,25 @@
         $price = $objResult["pri"];
         $num_pole_1 = $_POST["num_pole_1"];
         $total = $price*$num_pole_1;
-        echo $objResult["mat_name"]." จำนวน ".$num_pole_1." หน่วยละ ".$price." คิดเป็นเงิน ".$total." บาท";
         ?>
         <table data-role="table" id="temp-table" data-mode="reflow" class="ui-responsive table-stroke">
         <thead>
             <tr>
                 <th>รายการ</th>
                 <th>จำนวน</th>
+                <th>ราคา/หน่วย</th>
+                <th>เป็นเงิน</th>
             </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><?php $_POST["pole_1"]; ?></td>
+                <td><?php $_POST["num_pole_1"]; ?></td>
+                <td><?php $price; ?></td>
+                <td><?php $total; ?></td>
+
+            </tr>
+        </tbody
         </table>
     </div> 
       
