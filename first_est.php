@@ -22,7 +22,7 @@ $_SESSION["cs_tel"] = $_POST["cs_tel"];
 		<h1>ประมาณการค่าใช้จ่าย</h1>
 	</div>
     <div data-role="content"> 
-    <form name="pole-add-form" id="pole-add-form" method="POST">
+    <form  action="cal.php" name="pole-add-form" id="pole-add-form" method="POST">
         <div>
                 <?php
                 echo "ชื่อลูกค้า ".$_SESSION["cs_name"]."<br>";
