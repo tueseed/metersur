@@ -11,7 +11,7 @@
 <body> 
 <div data-role="page" id="page">
 	<div data-role="header">
-		<h1ประมาณการค่าใช้จ่าย</h1>
+		<h1>ประมาณการค่าใช้จ่าย</h1>
 	</div>
     <div data-role="content"> 
         <fieldset data-role="controlgroup">
