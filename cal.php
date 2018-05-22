@@ -25,10 +25,10 @@
         $sql_pole_1 = "SELECT * FROM tbl_price WHERE mat_id =".$_POST["pole_1"];
         $pole_1_query = mysqli_query($conn,$sql_pole_1);
         $objResult = mysqli_fetch_array($pole_1_query);
-        $price = $objResult["price"];
+        $price = $objResult["pri"];
         $num_pole_1 = $_POST["num_pole_1"];
         $total = $price*$num_pole_1;
-        echo $objResult["mat_name"]." ".$total;
+        echo $objResult["mat_name"]." จำนวน ".$num_pole_1." หน่วยละ ".$price." คิดเป็นเงิน ".$total." บาท";
         ?>
     </div>   
 </div>
