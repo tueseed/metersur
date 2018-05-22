@@ -16,6 +16,7 @@
 	</div>
     <div data-role="content"> 
         <?php
+        session_start();
         echo "ชื่อลูกค้า ".$_SESSION["cs_name"]."<br>";
         echo "เลขที่คำร้อง ".$_SESSION["req_num"]."<br>";
         echo "ที่อยู่ ".$_SESSION["addr"]."<br>";
