@@ -39,7 +39,7 @@
                 <th>เป็นเงิน</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody align="center">
             <tr>
                 <td><?php echo $objResult["mat_name"]; ?></td>
                 <td><?php echo $_POST["num_pole_1"]; ?></td>
