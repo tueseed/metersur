@@ -9,6 +9,9 @@
 <script src="jquery.mobile-1.0.min.js" type="text/javascript"></script>
 </head> 
 <body> 
+<?php
+require('./connect-db.php');
+?>
 <div data-role="page" id="page">
 	<div data-role="header">
 		<h1>ประมาณการค่าใช้จ่าย</h1>
@@ -17,40 +20,36 @@
         <div data-role="collapsible-set" data-content-theme="d" id="set">
             <div data-role="collapsible" id="set1" data-collapsed="true" class="in-group">
                 <h3><span class="in-group-1" id="in-group-1">เสาไฟฟ้า</span></h3>
-                    <legend>เสา 1:</legend>
-                        <select name="pole_1" id="pole_1">
-                            <option value="N/A">เลือกเสา</option>
-                            <option value="8">8 เมตร</option>
-                            <option value="9">9 เมตร</option>
-                            <option value="12">12 เมตร</option>
-                            <option value="12.20">12.20 เมตร</option>
-                            <option value="14">14 เมตร</option>
-                            <option value="14.30">14.30 เมตร</option>
-                        </select><!--เฟส-->
+                    <select name="pole_1" id="pole_1">
+                        <option value="N/A">เลือกเสา</option>
+                        <?php
+                            $sql_pole = "SELECT * FROM tbl_price WHERE type = 'p'";
+                            $result = mysqli_query($conn,$sql_pole);
+                            while($objResult = mysqli_fetch_array($result);){
+                                echo "<option value='".$objResult["mat_id"]."'>".$objResult["mat_name"]."</option>";
+                           }
+                        ?>  
+                    </select><!--เฟส-->
                     <input type="tel" name="num_pole_1" id="num_pole_1" value="" placeholder="จำนวน"/>
-
-                    <legend>เสา 2:</legend>
-                        <select name="pole_2" id="pole_2">
-                            <option value="N/A">เลือกเสา</option>
-                            <option value="8">8 เมตร</option>
-                            <option value="9">9 เมตร</option>
-                            <option value="12">12 เมตร</option>
-                            <option value="12.20">12.20 เมตร</option>
-                            <option value="14">14 เมตร</option>
-                            <option value="14.30">14.30 เมตร</option>
-                        </select><!--เฟส-->
+                    <select name="pole_2" id="pole_2">
+                        <option value="N/A">เลือกเสา</option>
+                        <option value="8">8 เมตร</option>
+                        <option value="9">9 เมตร</option>
+                        <option value="12">12 เมตร</option>
+                        <option value="12.20">12.20 เมตร</option>
+                        <option value="14">14 เมตร</option>
+                        <option value="14.30">14.30 เมตร</option>
+                    </select><!--เฟส-->
                     <input type="tel" name="num_pole_2" id="num_pole_2" value="" placeholder="จำนวน"/>
-                    
-                    <legend>เสา 3:</legend>
-                        <select name="pole_3" id="pole_3">
-                            <option value="N/A">เลือกเสา</option>
-                            <option value="8">8 เมตร</option>
-                            <option value="9">9 เมตร</option>
-                            <option value="12">12 เมตร</option>
-                            <option value="12.20">12.20 เมตร</option>
-                            <option value="14">14 เมตร</option>
-                            <option value="14.30">14.30 เมตร</option>
-                        </select><!--เฟส-->
+                    <select name="pole_3" id="pole_3">
+                        <option value="N/A">เลือกเสา</option>
+                        <option value="8">8 เมตร</option>
+                        <option value="9">9 เมตร</option>
+                        <option value="12">12 เมตร</option>
+                        <option value="12.20">12.20 เมตร</option>
+                        <option value="14">14 เมตร</option>
+                        <option value="14.30">14.30 เมตร</option>
+                    </select><!--เฟส-->
                     <input type="tel" name="num_pole_3" id="num_pole_3" value="" placeholder="จำนวน"/>
             </div>
         </div>
