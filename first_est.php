@@ -10,7 +10,7 @@
 </head> 
 <body> 
 <?php
-//require('connect-db.php');
+require('connect-db.php');
 ?>
 <div data-role="page" id="page">
 	<div data-role="header">
@@ -23,9 +23,9 @@
                     <select name="pole_1" id="pole_1">
                         <option value="N/A">เลือกเสา</option>
                         <?php
-                            $sql_pole = "SELECT * FROM tbl_price";
+                            $sql_pole = "SELECT * FROM tbl_price WHERE type = 'p'";
                             $result = mysqli_query($conn,$sql_pole);
-                            while($objResult = mysqli_fetch_array($result);){
+                            while($objResult = mysqli_fetch_array($result)){
                                 echo "<option value='".$objResult["mat_id"]."'>".$objResult["mat_name"]."</option>";
                            }
                         ?>  
