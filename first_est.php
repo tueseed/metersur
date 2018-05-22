@@ -80,34 +80,39 @@
                     <input type="tel" name="num_head_2" id="num_head_2" value="" placeholder="จำนวน"/>
             </div>
         </div>
+        <div data-role="collapsible-set" data-content-theme="d" id="set">
+            <div data-role="collapsible" id="set1" data-collapsed="true" class="in-group">
+                <h3><span class="in-group-1" id="in-group-1">สายไฟฟ้า</span></h3>
+                    <legend >สาย 1:</legend>
+                    <select name="wire_1" id="wire_1">
+                        <option value="N/A">เลือกสาย</option>
+                        <option value="สาย 95 A">สาย 95 A</option>
+                        <option value="สาย 185 A">สาย 185 A</option>
+                        <option value="สาย 50 ACSR">สาย 50 ACSR</option>
+                        <option value="สายเคเบิลอากาศ 50 SAC">สายเคเบิลอากาศ 50 SAC</option>
+                        <option value="สายเคเบิลอากาศ 185 SAC">สายเคเบิลอากาศ 185 SAC</option>
+                        <option value="สาย 50 PIC">สาย 50 PIC</option>
+                        <option value="สาย 120 PIC">สาย 120 PIC</option>
+                        <option value="สาย 185 PIC">สาย 185 PIC</option>
+                    </select><!--เฟส-->
+                <input type="tel" name="num_wire_1" id="num_wire_1" value="" placeholder="จำนวน"/>
 
-        <legend >สาย 1:</legend>
-            <select name="wire_1" id="wire_1">
-                <option value="N/A">เลือกสาย</option>
-                <option value="สาย 95 A">สาย 95 A</option>
-                <option value="สาย 185 A">สาย 185 A</option>
-                <option value="สาย 50 ACSR">สาย 50 ACSR</option>
-                <option value="สายเคเบิลอากาศ 50 SAC">สายเคเบิลอากาศ 50 SAC</option>
-                <option value="สายเคเบิลอากาศ 185 SAC">สายเคเบิลอากาศ 185 SAC</option>
-                <option value="สาย 50 PIC">สาย 50 PIC</option>
-                <option value="สาย 120 PIC">สาย 120 PIC</option>
-                <option value="สาย 185 PIC">สาย 185 PIC</option>
-            </select><!--เฟส-->
-        <input type="tel" name="num_wire_1" id="num_wire_1" value="" placeholder="จำนวน"/>
-
-        <legend >สาย 2:</legend>
-            <select name="wire_2" id="wire_2">
-                <option value="N/A">เลือกสาย</option>
-                <option value="สาย 95 A">สาย 95 A</option>
-                <option value="สาย 185 A">สาย 185 A</option>
-                <option value="สาย 50 ACSR">สาย 50 ACSR</option>
-                <option value="สายเคเบิลอากาศ 50 SAC">สายเคเบิลอากาศ 50 SAC</option>
-                <option value="สายเคเบิลอากาศ 185 SAC">สายเคเบิลอากาศ 185 SAC</option>
-                <option value="สาย 50 PIC">สาย 50 PIC</option>
-                <option value="สาย 120 PIC">สาย 120 PIC</option>
-                <option value="สาย 185 PIC">สาย 185 PIC</option>
-            </select><!--เฟส-->
-           <input type="tel" name="num_wire_2" id="num_wire_2" value="" placeholder="จำนวน"/>
+                <legend >สาย 2:</legend>
+                    <select name="wire_2" id="wire_2">
+                        <option value="N/A">เลือกสาย</option>
+                        <option value="สาย 95 A">สาย 95 A</option>
+                        <option value="สาย 185 A">สาย 185 A</option>
+                        <option value="สาย 50 ACSR">สาย 50 ACSR</option>
+                        <option value="สายเคเบิลอากาศ 50 SAC">สายเคเบิลอากาศ 50 SAC</option>
+                        <option value="สายเคเบิลอากาศ 185 SAC">สายเคเบิลอากาศ 185 SAC</option>
+                        <option value="สาย 50 PIC">สาย 50 PIC</option>
+                        <option value="สาย 120 PIC">สาย 120 PIC</option>
+                        <option value="สาย 185 PIC">สาย 185 PIC</option>
+                    </select><!--เฟส-->
+                <input type="tel" name="num_wire_2" id="num_wire_2" value="" placeholder="จำนวน"/>
+            </div>
+        </div>
+    
     </div>   
 </div>
 
