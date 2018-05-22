@@ -40,7 +40,7 @@
         </thead>
         <tbody>
             <tr>
-                <td><?php $_POST["pole_1"]; ?></td>
+                <td><?php echo $_POST["pole_1"]; ?></td>
                 <td><?php $_POST["num_pole_1"]; ?></td>
                 <td><?php $price; ?></td>
                 <td><?php $total; ?></td>
