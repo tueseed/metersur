@@ -14,42 +14,46 @@
 		<h1>ประมาณการค่าใช้จ่าย</h1>
 	</div>
     <div data-role="content"> 
-        <legend>เสา 1:</legend>
-            <select name="pole_1" id="pole_1">
-                <option value="N/A">เลือกเสา</option>
-                <option value="8">8 เมตร</option>
-                <option value="9">9 เมตร</option>
-                <option value="12">12 เมตร</option>
-                <option value="12.20">12.20 เมตร</option>
-                <option value="14">14 เมตร</option>
-                <option value="14.30">14.30 เมตร</option>
-            </select><!--เฟส-->
-        <input type="tel" name="num_pole_1" id="num_pole_1" value="" placeholder="จำนวน"/>
+        <div data-role="collapsible-set" data-content-theme="d" id="set">
+            <div data-role="collapsible" id="set1" data-collapsed="true" class="in-group">
+                <h3><span class="in-group-1" id="in-group-1">ก่อสร้าง</span></h3>
+                    <legend>เสา 1:</legend>
+                        <select name="pole_1" id="pole_1">
+                            <option value="N/A">เลือกเสา</option>
+                            <option value="8">8 เมตร</option>
+                            <option value="9">9 เมตร</option>
+                            <option value="12">12 เมตร</option>
+                            <option value="12.20">12.20 เมตร</option>
+                            <option value="14">14 เมตร</option>
+                            <option value="14.30">14.30 เมตร</option>
+                        </select><!--เฟส-->
+                    <input type="tel" name="num_pole_1" id="num_pole_1" value="" placeholder="จำนวน"/>
 
-        <legend>เสา 2:</legend>
-            <select name="pole_2" id="pole_2">
-                <option value="N/A">เลือกเสา</option>
-                <option value="8">8 เมตร</option>
-                <option value="9">9 เมตร</option>
-                <option value="12">12 เมตร</option>
-                <option value="12.20">12.20 เมตร</option>
-                <option value="14">14 เมตร</option>
-                <option value="14.30">14.30 เมตร</option>
-            </select><!--เฟส-->
-         <input type="tel" name="num_pole_2" id="num_pole_2" value="" placeholder="จำนวน"/>
-        
-        <legend>เสา 3:</legend>
-            <select name="pole_3" id="pole_3">
-                <option value="N/A">เลือกเสา</option>
-                <option value="8">8 เมตร</option>
-                <option value="9">9 เมตร</option>
-                <option value="12">12 เมตร</option>
-                <option value="12.20">12.20 เมตร</option>
-                <option value="14">14 เมตร</option>
-                <option value="14.30">14.30 เมตร</option>
-            </select><!--เฟส-->
-        <input type="tel" name="num_pole_3" id="num_pole_3" value="" placeholder="จำนวน"/>
-        
+                    <legend>เสา 2:</legend>
+                        <select name="pole_2" id="pole_2">
+                            <option value="N/A">เลือกเสา</option>
+                            <option value="8">8 เมตร</option>
+                            <option value="9">9 เมตร</option>
+                            <option value="12">12 เมตร</option>
+                            <option value="12.20">12.20 เมตร</option>
+                            <option value="14">14 เมตร</option>
+                            <option value="14.30">14.30 เมตร</option>
+                        </select><!--เฟส-->
+                    <input type="tel" name="num_pole_2" id="num_pole_2" value="" placeholder="จำนวน"/>
+                    
+                    <legend>เสา 3:</legend>
+                        <select name="pole_3" id="pole_3">
+                            <option value="N/A">เลือกเสา</option>
+                            <option value="8">8 เมตร</option>
+                            <option value="9">9 เมตร</option>
+                            <option value="12">12 เมตร</option>
+                            <option value="12.20">12.20 เมตร</option>
+                            <option value="14">14 เมตร</option>
+                            <option value="14.30">14.30 เมตร</option>
+                        </select><!--เฟส-->
+                    <input type="tel" name="num_pole_3" id="num_pole_3" value="" placeholder="จำนวน"/>
+            </div>
+        </div>
         <legend>อุปกรณ์หัวเสา 1:</legend>
             <select name="head_1" id="head_1">
                 <option value="N/A">หัวเสา 1</option>
