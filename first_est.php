@@ -24,8 +24,7 @@
                 <option value="14">14 เมตร</option>
                 <option value="14.30">14.30 เมตร</option>
             </select><!--เฟส-->
-        <legend class="txt-in">จำนวน:</legend>
-            <input type="tel" name="num_pole_1" id="num_pole_1" value=""/>
+        <input type="tel" name="num_pole_1" id="num_pole_1" value="" placeholder="จำนวน"/>
 
         <legend>เสา 2:</legend>
             <select name="pole_2" id="pole_2">
@@ -37,8 +36,7 @@
                 <option value="14">14 เมตร</option>
                 <option value="14.30">14.30 เมตร</option>
             </select><!--เฟส-->
-        <legend class="txt-in">จำนวน:</legend>
-            <input type="tel" name="num_pole_2" id="num_pole_2" value=""/>
+         <input type="tel" name="num_pole_2" id="num_pole_2" value="" placeholder="จำนวน"/>
         
         <legend>เสา 3:</legend>
             <select name="pole_3" id="pole_3">
@@ -50,8 +48,7 @@
                 <option value="14">14 เมตร</option>
                 <option value="14.30">14.30 เมตร</option>
             </select><!--เฟส-->
-        <legend >จำนวน:</legend>
-            <input type="tel" name="num_pole_3" id="num_pole_3" value=""/>
+        <input type="tel" name="num_pole_3" id="num_pole_3" value="" placeholder="จำนวน"/>
         
         <legend>อุปกรณ์หัวเสา 1:</legend>
             <select name="head_1" id="head_1">
@@ -62,8 +59,7 @@
                 <option value="อุปกรณ์ CCB (เคบิล) 90">อุปกรณ์ CCB (เคบิล) 90</option>
                 <option value="อุปกรณ์ 3 เฟส DDE">อุปกรณ์ 3 เฟส DDE</option>
             </select><!--เฟส-->
-        <legend >จำนวน:</legend>
-            <input type="tel" name="num_head_1" id="num_head_1" value=""/>
+        <input type="tel" name="num_head_1" id="num_head_1" value="" placeholder="จำนวน"/>
         
         <legend>อุปกรณ์หัวเสา 2:</legend>
             <select name="head_2" id="head_1">
@@ -74,8 +70,7 @@
                 <option value="อุปกรณ์ CCB (เคบิล) 90">อุปกรณ์ CCB (เคบิล) 90</option>
                 <option value="อุปกรณ์ 3 เฟส DDE">อุปกรณ์ 3 เฟส DDE</option>
             </select><!--เฟส-->
-        <legend >จำนวน:</legend>
-            <input type="tel" name="num_head_2" id="num_head_2" value=""/>
+         <input type="tel" name="num_head_2" id="num_head_2" value="" placeholder="จำนวน"/>
         <legend >สาย 1:</legend>
             <select name="wire_1" id="wire_1">
                 <option value="N/A">เลือกสาย</option>
@@ -88,8 +83,7 @@
                 <option value="สาย 120 PIC">สาย 120 PIC</option>
                 <option value="สาย 185 PIC">สาย 185 PIC</option>
             </select><!--เฟส-->
-        <legend >จำนวน:</legend>
-            <input type="tel" name="num_wire_1" id="num_wire_1" value=""/>
+        <input type="tel" name="num_wire_1" id="num_wire_1" value="" placeholder="จำนวน"/>
 
         <legend >สาย 2:</legend>
             <select name="wire_2" id="wire_2">
@@ -103,8 +97,7 @@
                 <option value="สาย 120 PIC">สาย 120 PIC</option>
                 <option value="สาย 185 PIC">สาย 185 PIC</option>
             </select><!--เฟส-->
-        <legend >จำนวน:</legend>
-            <input type="tel" name="num_wire_2" id="num_wire_2" value=""/>
+           <input type="tel" name="num_wire_2" id="num_wire_2" value="" placeholder="จำนวน"/>
     </div>   
 </div>
 
