@@ -11,12 +11,25 @@
 <body> 
 <?php
 require('./connect-db.php');
+$cs_name = $_POST["cs_name"];
+$req_number = $_POST["req_num"];
+$addr = $_POST["addr"];
+$cs_tel = $_POST["cs_tel"];
 ?>
 <div data-role="page" id="page">
 	<div data-role="header">
 		<h1>ประมาณการค่าใช้จ่าย</h1>
 	</div>
     <div data-role="content"> 
+    <form name="pole-add-form" id="pole-add-form" method="POST">
+        <div>
+                <?php
+                echo "<h3>ชื่อลูกค้า ".$cs_name."</h3><br>";
+                echo "<h3>เลขที่คำร้อง ".$req_number."</h3><br>";
+                echo "<h3>ที่อยู่ ".$addr."</h3><br>";
+                echo "<h3>เบอร์โทรติดต่อ ".$cs_tel."</h3><br>";
+                ?>
+        </div>
         <div data-role="collapsible-set" data-content-theme="d" id="set">
             <div data-role="collapsible" id="set1" data-collapsed="true" class="in-group">
                 <h3><span class="in-group-1" id="in-group-1">เสาไฟฟ้า</span></h3>
@@ -122,7 +135,8 @@ require('./connect-db.php');
                 <input type="tel" name="num_wire_2" id="num_wire_2" value="" placeholder="จำนวน"/>
             </div>
         </div>
-        <div><input type="submit" data-icon="plus" value="คำนวณ"></div>
+        <div><input type="submit" value="คำนวณ"></div>
+        </form>
     </div>   
 </div>
 
