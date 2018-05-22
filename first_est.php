@@ -13,28 +13,16 @@
 	<div data-role="header">
 		<h1ประมาณการค่าใช้จ่าย</h1>
 	</div>
-  <div data-role="content"> 
-    <div data-role="content-primary">
-      <fieldset data-role="controlgroup">
-        <legend class="txt-in">เสา:</legend>
-          <select name="phase" id="phase" onchange="select_head_ht(this.value)">
-            <option value="N/A">เฟส</option>
-            <option value="1">1 เฟส</option>
-            <option value="3">3 เฟส</option>
-           </select><!--เฟส-->
-           <select name="wire" id="wire">
-                                <option value="N/A">สาย</option>
-                                <option value="319">50 PIC</option>
-                                <option value="322">120 PIC</option>
-                                <option value="323">185 PIC</option>
-                                <option value="332">50 SAC</option>
-                                <option value="336">185 SAC</option>
-            </select><!--สาย-->
-         </fieldset>
-    </div>
-   </div>
-    
-    
+    <div data-role="content"> 
+        <fieldset data-role="controlgroup">
+            <legend class="txt-in">เสา:</legend>
+            <select name="phase" id="phase" onchange="select_head_ht(this.value)">
+                <option value="N/A">เฟส</option>
+                <option value="1">1 เฟส</option>
+                <option value="3">3 เฟส</option>
+            </select><!--เฟส-->
+        </fieldset>
+    </div>   
 </div>
 
 </body>
