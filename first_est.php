@@ -46,12 +46,14 @@ require('./connect-db.php');
                     <input type="tel" name="num_pole_2" id="num_pole_2" value="" placeholder="จำนวน"/>
                     <select name="pole_3" id="pole_3">
                         <option value="N/A">เลือกเสา</option>
-                        <option value="8">8 เมตร</option>
-                        <option value="9">9 เมตร</option>
-                        <option value="12">12 เมตร</option>
-                        <option value="12.20">12.20 เมตร</option>
-                        <option value="14">14 เมตร</option>
-                        <option value="14.30">14.30 เมตร</option>
+                        <?php
+                            $sql_pole = "SELECT * FROM tbl_price WHERE type = 'p'";
+                            $result = mysqli_query($conn,$sql_pole);
+                            while($objResult = mysqli_fetch_array($result)){
+                                echo "<option value='".$objResult["mat_id"]."'>".$objResult["mat_name"]."</option>";
+                           }
+                           mysqli_data_seek($result,0);
+                        ?>  
                     </select><!--เฟส-->
                     <input type="tel" name="num_pole_3" id="num_pole_3" value="" placeholder="จำนวน"/>
             </div>
@@ -61,12 +63,15 @@ require('./connect-db.php');
                 <h3><span class="in-group-1" id="in-group-1">อุปกรณ์หัวเสา</span></h3>
                     <legend>อุปกรณ์หัวเสา 1:</legend>
                         <select name="head_1" id="head_1">
-                            <option value="N/A">หัวเสา 1</option>
-                            <option value="CTB เสา12 (เคบิล)0-5">CTB เสา12 (เคบิล)0-5</option>
-                            <option value="อุปกรณ์ CTB เสา14 (เคบิล)0-5">อุปกรณ์ CTB เสา14 (เคบิล)0-5</option>
-                            <option value="อุปกรณ์ CCB (เคบิล) 60">อุปกรณ์ CCB (เคบิล) 60</option>
-                            <option value="อุปกรณ์ CCB (เคบิล) 90">อุปกรณ์ CCB (เคบิล) 90</option>
-                            <option value="อุปกรณ์ 3 เฟส DDE">อุปกรณ์ 3 เฟส DDE</option>
+                            <option value="N/A">เลือกอุปกรณ์หัวเสา</option>
+                            <?php
+                            $sql_head = "SELECT * FROM tbl_price WHERE type = 'h'";
+                            $result = mysqli_query($conn,$sql_head);
+                            while($objResult = mysqli_fetch_array($result)){
+                                echo "<option value='".$objResult["mat_id"]."'>".$objResult["mat_name"]."</option>";
+                           }
+                           mysqli_data_seek($result,0);
+                        ?>  
                         </select><!--เฟส-->
                     <input type="tel" name="num_head_1" id="num_head_1" value="" placeholder="จำนวน"/>
                     
