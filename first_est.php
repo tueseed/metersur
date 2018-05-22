@@ -16,7 +16,7 @@
     <div data-role="content"> 
         <div data-role="collapsible-set" data-content-theme="d" id="set">
             <div data-role="collapsible" id="set1" data-collapsed="true" class="in-group">
-                <h3><span class="in-group-1" id="in-group-1">ก่อสร้าง</span></h3>
+                <h3><span class="in-group-1" id="in-group-1">เสาไฟฟ้า</span></h3>
                     <legend>เสา 1:</legend>
                         <select name="pole_1" id="pole_1">
                             <option value="N/A">เลือกเสา</option>
@@ -54,27 +54,33 @@
                     <input type="tel" name="num_pole_3" id="num_pole_3" value="" placeholder="จำนวน"/>
             </div>
         </div>
-        <legend>อุปกรณ์หัวเสา 1:</legend>
-            <select name="head_1" id="head_1">
-                <option value="N/A">หัวเสา 1</option>
-                <option value="CTB เสา12 (เคบิล)0-5">CTB เสา12 (เคบิล)0-5</option>
-                <option value="อุปกรณ์ CTB เสา14 (เคบิล)0-5">อุปกรณ์ CTB เสา14 (เคบิล)0-5</option>
-                <option value="อุปกรณ์ CCB (เคบิล) 60">อุปกรณ์ CCB (เคบิล) 60</option>
-                <option value="อุปกรณ์ CCB (เคบิล) 90">อุปกรณ์ CCB (เคบิล) 90</option>
-                <option value="อุปกรณ์ 3 เฟส DDE">อุปกรณ์ 3 เฟส DDE</option>
-            </select><!--เฟส-->
-        <input type="tel" name="num_head_1" id="num_head_1" value="" placeholder="จำนวน"/>
-        
-        <legend>อุปกรณ์หัวเสา 2:</legend>
-            <select name="head_2" id="head_1">
-                <option value="N/A">หัวเสา 1</option>
-                <option value="CTB เสา12 (เคบิล)0-5">CTB เสา12 (เคบิล)0-5</option>
-                <option value="อุปกรณ์ CTB เสา14 (เคบิล)0-5">อุปกรณ์ CTB เสา14 (เคบิล)0-5</option>
-                <option value="อุปกรณ์ CCB (เคบิล) 60">อุปกรณ์ CCB (เคบิล) 60</option>
-                <option value="อุปกรณ์ CCB (เคบิล) 90">อุปกรณ์ CCB (เคบิล) 90</option>
-                <option value="อุปกรณ์ 3 เฟส DDE">อุปกรณ์ 3 เฟส DDE</option>
-            </select><!--เฟส-->
-         <input type="tel" name="num_head_2" id="num_head_2" value="" placeholder="จำนวน"/>
+        <div data-role="collapsible-set" data-content-theme="d" id="set">
+            <div data-role="collapsible" id="set1" data-collapsed="true" class="in-group">
+                <h3><span class="in-group-1" id="in-group-1">อุปกรณ์หัวเสา</span></h3>
+                    <legend>อุปกรณ์หัวเสา 1:</legend>
+                        <select name="head_1" id="head_1">
+                            <option value="N/A">หัวเสา 1</option>
+                            <option value="CTB เสา12 (เคบิล)0-5">CTB เสา12 (เคบิล)0-5</option>
+                            <option value="อุปกรณ์ CTB เสา14 (เคบิล)0-5">อุปกรณ์ CTB เสา14 (เคบิล)0-5</option>
+                            <option value="อุปกรณ์ CCB (เคบิล) 60">อุปกรณ์ CCB (เคบิล) 60</option>
+                            <option value="อุปกรณ์ CCB (เคบิล) 90">อุปกรณ์ CCB (เคบิล) 90</option>
+                            <option value="อุปกรณ์ 3 เฟส DDE">อุปกรณ์ 3 เฟส DDE</option>
+                        </select><!--เฟส-->
+                    <input type="tel" name="num_head_1" id="num_head_1" value="" placeholder="จำนวน"/>
+                    
+                    <legend>อุปกรณ์หัวเสา 2:</legend>
+                        <select name="head_2" id="head_1">
+                            <option value="N/A">หัวเสา 1</option>
+                            <option value="CTB เสา12 (เคบิล)0-5">CTB เสา12 (เคบิล)0-5</option>
+                            <option value="อุปกรณ์ CTB เสา14 (เคบิล)0-5">อุปกรณ์ CTB เสา14 (เคบิล)0-5</option>
+                            <option value="อุปกรณ์ CCB (เคบิล) 60">อุปกรณ์ CCB (เคบิล) 60</option>
+                            <option value="อุปกรณ์ CCB (เคบิล) 90">อุปกรณ์ CCB (เคบิล) 90</option>
+                            <option value="อุปกรณ์ 3 เฟส DDE">อุปกรณ์ 3 เฟส DDE</option>
+                        </select><!--เฟส-->
+                    <input type="tel" name="num_head_2" id="num_head_2" value="" placeholder="จำนวน"/>
+            </div>
+        </div>
+
         <legend >สาย 1:</legend>
             <select name="wire_1" id="wire_1">
                 <option value="N/A">เลือกสาย</option>
