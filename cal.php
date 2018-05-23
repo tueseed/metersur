@@ -47,7 +47,7 @@
                       array($wire_1,$num_wire_1),
                       array($wire_2,$num_wire_2)
                       );
-        //echo "fdkl".$num_pole_1;
+        
         ?>
         <table align="center" data-role="table" id="temp-table" data-mode="reflow" class="ui-responsive table-stroke">
         <thead>
@@ -70,7 +70,8 @@
                     $price = $objResult["pri"];
                     $num_pole_1 = $data1[$j][1];
                     $total = $price*$num_pole_1;
-                    echo "<td>".$objResult["mat_name"]."</td>";
+                    //echo "<td>".$objResult["mat_name"]."</td>";
+                    echo "<td>".$data1[0][0]."</td>";
                     echo "<td>".$num_pole_1."</td>";
                     echo "<td>".$price."</td>";
                     echo "<td>".$total."</td>";
