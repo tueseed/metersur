@@ -67,21 +67,20 @@
                         $sql = "SELECT * FROM tbl_price WHERE mat_id =".$data[$j][0];
                         $result = mysqli_query($conn,$sql);
                         $objresult = mysqli_fetch_array($result);
-                        $toatl = $data[$j][1]*$objresult["pri"];
+                        $total = $data[$j][1]*$objresult["pri"];
                         echo "<tr>";
                         echo "<td>".$objresult["mat_name"]."</td>";
                         echo "<td>".$data[$j][1]."</td>";
                         echo "<td>".$objresult["pri"]."</td>";
-                        echo "<td>".$toatl."</td>";
+                        echo "<td>".$total."</td>";
                         echo "</tr>";
-
                     }
-                    
+                    $t_all =$t_all+$total;
                 }
                 ?>
             </tbody>
         </table>
-        
+        <?php  echo "รวมเป็นเงินทั้งสิ้นประมาณ".$t_all;   ?>
     </div> 
       
 </div>
