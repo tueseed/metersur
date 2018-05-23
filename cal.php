@@ -38,7 +38,7 @@
         $wire_2 = $_POST["wire_2"];
         $num_wire_1 = $_POST["num_wire_1"];
         $num_wire_2 = $_POST["num_wire_2"];
-        $data = array(
+        /*$data = array(
                       ($pole_1,$num_pole_1),
                       ($pole_2,$num_pole_2),
                       ($pole_3,$num_pole_3),
@@ -46,7 +46,7 @@
                       ($head_2,$num_head_2),
                       ($wire_1,$num_wire_1),
                       ($wire_2,$num_wire_2)
-                      );
+                      );*/
         ?>
         <table align="center" data-role="table" id="temp-table" data-mode="reflow" class="ui-responsive table-stroke">
         <thead>
@@ -60,7 +60,7 @@
         <tbody align="center">
             <tr>
                 <?php
-               /* $j=0 ;
+                $j=0 ;
                 foreach($data as $data1){
                     
                     $sql_pole_1 = "SELECT * FROM tbl_price WHERE mat_id =".$data1[$j][0];
@@ -74,7 +74,7 @@
                     echo "<td>".$price."</td>";
                     echo "<td>".$total."</td>";
                     $j=$j+1;
-                }*/
+                }
                 ?>
 
             </tr>
