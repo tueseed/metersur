@@ -51,28 +51,36 @@
        
 
         ?>
-        
+        <table data-role="table" id="my-table" data-mode="reflow">
+            <thead>
+                <tr>
+                    <th>รายการ</th>
+                    <th>จำนวน</th>
+                    <th>ราคา/หน่วย</th>
+                    <th>เป็นเงิน</th>
+                </tr>
+            </thead>
+            <tbody>
                 <?php
                 for($j=0;$j<=6;$j++){
+                    if($data[$j][0] <> "N/A"){
+                        $sql = "SELECT * FROM tbl_price WHERE mat_id =".$data[$j][0];
+                        $result = mysqli_query($conn,$sql);
+                        $objresult = mysqli_fetch_array($result);
+                        $toatl = $data[$j][1]*$objresult["pri"];
+                        echo "<tr>";
+                        echo "<td>".$objresult["mat_name"]."</td>";
+                        echo "<td>".$data[$j][1]."</td>";
+                        echo "<td>".$objresult["pri"]."</td>";
+                        echo "<td>".$toatl."</td>";
+                        echo "</tr>";
+
+                    }
                     
-                    /*$sql_pole_1 = "SELECT * FROM tbl_price WHERE mat_id =".$data1[$j][0];
-                    $pole_1_query = mysqli_query($conn,$sql_pole_1);
-                    $objResult = mysqli_fetch_array($pole_1_query);
-                    $price = $objResult["pri"];
-                    $num = $data1[$j][1];
-                    $total = $price*$num_pole_1;
-                    //echo "<td>".$objResult["mat_name"]."</td>";
-                    
-                    echo $objResult["mat_name"];
-                    echo $num;
-                    echo $price.;
-                    echo $total.;
-                   
-                    $j=$j+1;*/
-                    echo $data[$j][0].$data[$j][1]."<br>";
                 }
                 ?>
-
+            </tbody>
+        </table>
         
     </div> 
       
