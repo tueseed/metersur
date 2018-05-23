@@ -69,7 +69,7 @@
                     echo $total.;
                    
                     $j=$j+1;*/
-                    echo $data[j][0]."<br>";
+                    echo $data[$j][0]."<br>";
                 }
                 ?>
 
