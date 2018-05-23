@@ -47,7 +47,14 @@
                       array($wire_1,$num_wire_1),
                       array($wire_2,$num_wire_2)
                       );
-        
+        echo $data[0][0];
+        echo $data[1][0];
+        echo $data[2][0];
+        echo $data[3][0];
+        echo $data[4][0];
+        echo $data[5][0];
+        echo $data[6][0];
+
         ?>
         <table align="center" data-role="table" id="temp-table" data-mode="reflow" class="ui-responsive table-stroke">
         <thead>
@@ -59,7 +66,7 @@
             </tr>
         </thead>
         <tbody align="center">
-            <tr>
+            
                 <?php
                 $j=0 ;
                 foreach($data as $data1){
@@ -71,10 +78,12 @@
                     $num_pole_1 = $data1[$j][1];
                     $total = $price*$num_pole_1;
                     //echo "<td>".$objResult["mat_name"]."</td>";
+                    echo "<tr>";
                     echo "<td>".$data1[0][0]."</td>";
                     echo "<td>".$num_pole_1."</td>";
                     echo "<td>".$price."</td>";
                     echo "<td>".$total."</td>";
+                    echo "</tr>";
                     $j=$j+1;
                 }
                 ?>
