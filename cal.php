@@ -38,15 +38,15 @@
         $wire_2 = $_POST["wire_2"];
         $num_wire_1 = $_POST["num_wire_1"];
         $num_wire_2 = $_POST["num_wire_2"];
-        /*$data = array(
-                      ($pole_1,$num_pole_1),
-                      ($pole_2,$num_pole_2),
-                      ($pole_3,$num_pole_3),
-                      ($head_1,$num_head_1),
-                      ($head_2,$num_head_2),
-                      ($wire_1,$num_wire_1),
-                      ($wire_2,$num_wire_2)
-                      );*/
+        $data = array(
+                      array($pole_1,$num_pole_1),
+                      array($pole_2,$num_pole_2),
+                      array($pole_3,$num_pole_3),
+                      array($head_1,$num_head_1),
+                      array($head_2,$num_head_2),
+                      array($wire_1,$num_wire_1),
+                      array($wire_2,$num_wire_2)
+                      );
         ?>
         <table align="center" data-role="table" id="temp-table" data-mode="reflow" class="ui-responsive table-stroke">
         <thead>
