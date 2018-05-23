@@ -53,7 +53,7 @@
         ?>
         
                 <?php
-                for($j=0;$<=6;$j++;){
+                for($j=0;$<=6;$j++){
                     
                     /*$sql_pole_1 = "SELECT * FROM tbl_price WHERE mat_id =".$data1[$j][0];
                     $pole_1_query = mysqli_query($conn,$sql_pole_1);
