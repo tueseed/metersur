@@ -47,7 +47,8 @@
                       array($wire_1,$num_wire_1),
                       array($wire_2,$num_wire_2)
                       );
-         ?>
+        echo "fdkl".$num_pole_1;
+        ?>
         <table align="center" data-role="table" id="temp-table" data-mode="reflow" class="ui-responsive table-stroke">
         <thead>
             <tr>
