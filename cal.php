@@ -60,7 +60,7 @@
         <tbody align="center">
             <tr>
                 <?php
-                $j=0 ;
+               /* $j=0 ;
                 foreach($data as $data1){
                     
                     $sql_pole_1 = "SELECT * FROM tbl_price WHERE mat_id =".$data1[$j][0];
@@ -74,7 +74,7 @@
                     echo "<td>".$price."</td>";
                     echo "<td>".$total."</td>";
                     $j=$j+1;
-                }
+                }*/
                 ?>
 
             </tr>
