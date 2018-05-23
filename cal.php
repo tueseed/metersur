@@ -47,13 +47,8 @@
                       array($wire_1,$num_wire_1),
                       array($wire_2,$num_wire_2)
                       );
-        echo $data[0][0];
-        echo $data[1][0];
-        echo $data[2][0];
-        echo $data[3][0];
-        echo $data[4][0];
-        echo $data[5][0];
-        echo $data[6][0];
+        echo "<br>";
+       
 
         ?>
         <table align="center" data-role="table" id="temp-table" data-mode="reflow" class="ui-responsive table-stroke">
