@@ -22,13 +22,23 @@
         echo "เลขที่คำร้อง ".$_SESSION["req_num"]."<br>";
         echo "ที่อยู่ ".$_SESSION["addr"]."<br>";
         echo "เบอร์โทรติดต่อ ".$_SESSION["cs_tel"]."<br><br>";
+        //////////////////pole_1
         $sql_pole_1 = "SELECT * FROM tbl_price WHERE mat_id =".$_POST["pole_1"];
         $pole_1_query = mysqli_query($conn,$sql_pole_1);
         $objResult = mysqli_fetch_array($pole_1_query);
         $price = $objResult["pri"];
         $num_pole_1 = $_POST["num_pole_1"];
         $total = $price*$num_pole_1;
-        
+        ////////////////////////////////////////////pole_2
+        $data = array(
+                      ($_POST["pole_1"],$_POST["num_pole_1"]),//0
+                      ($_POST["pole_2"],$_POST["num_pole_2"]),//1
+                      ($_POST["pole_3"],$_POST["num_pole_3"]),//2
+                      ($_POST["head_1"],$_POST["num_head_1"]),//3
+                      ($_POST["head_2"],$_POST["num_head_2"]),//4
+                      ($_POST["wire_1"],$_POST["num_wire_1"]),//5
+                      ($_POST["wire_2"],$_POST["num_wire_2"])//6
+                      );
         ?>
         <table align="center" data-role="table" id="temp-table" data-mode="reflow" class="ui-responsive table-stroke">
         <thead>
@@ -41,10 +51,23 @@
         </thead>
         <tbody align="center">
             <tr>
-                <td><?php echo $objResult["mat_name"]; ?></td>
-                <td><?php echo $_POST["num_pole_1"]; ?></td>
-                <td><?php echo $price; ?></td>
-                <td><?php echo $total; ?></td>
+                <?php
+                $j=0 ;
+                foreach($data as $data1){
+                    
+                    $sql_pole_1 = "SELECT * FROM tbl_price WHERE mat_id =".$data1[$j][0];
+                    $pole_1_query = mysqli_query($conn,$sql_pole_1);
+                    $objResult = mysqli_fetch_array($pole_1_query);
+                    $price = $objResult["pri"];
+                    $num_pole_1 = $data1[$j][1];
+                    $total = $price*$num_pole_1;
+                    echo "<td>".$objResult["mat_name"]."</td>";
+                    echo "<td>".$num_pole_1."</td>";
+                    echo "<td>".$price."</td>";
+                    echo "<td>".$total."</td>";
+                    $j=$j+1;
+                }
+                ?>
 
             </tr>
         </tbody
