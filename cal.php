@@ -24,14 +24,28 @@
         echo "เบอร์โทรติดต่อ ".$_SESSION["cs_tel"]."<br><br>";
         //////////////////pole_1
         ////////////////////////////////////////////pole_2
+        $pole_1 = $_POST["pole_1"];
+        $pole_2 = $_POST["pole_2"];
+        $pole_3 = $_POST["pole_3"];
+        $num_pole_1 = $_POST["num_pole_1"];
+        $num_pole_2 = $_POST["num_pole_2"];
+        $num_pole_3 = $_POST["num_pole_3"];
+        $head_1 = $_POST["head_1"];
+        $head_2 = $_POST["head_2"];
+        $num_head_1 = $_POST["num_head_1"];
+        $num_head_2 = $_POST["num_head_2"];
+        $wire_1 = $_POST["wire_1"];
+        $wire_2 = $_POST["wire_2"];
+        $num_wire_1 = $_POST["num_wire_1"];
+        $num_wire_2 = $_POST["num_wire_2"];
         $data = array(
-                      ($_POST["pole_1"],$_POST["num_pole_1"]),//0
-                      ($_POST["pole_2"],$_POST["num_pole_2"]),//1
-                      ($_POST["pole_3"],$_POST["num_pole_3"]),//2
-                      ($_POST["head_1"],$_POST["num_head_1"]),//3
-                      ($_POST["head_2"],$_POST["num_head_2"]),//4
-                      ($_POST["wire_1"],$_POST["num_wire_1"]),//5
-                      ($_POST["wire_2"],$_POST["num_wire_2"])//6
+                      ($pole_1,$num_pole_1),
+                      ($pole_2,$num_pole_2),
+                      ($pole_3,$num_pole_3),
+                      ($head_1,$num_head_1),
+                      ($head_2,$num_head_2),
+                      ($wire_1,$num_wire_1),
+                      ($wire_2,$num_wire_2)
                       );
         ?>
         <table align="center" data-role="table" id="temp-table" data-mode="reflow" class="ui-responsive table-stroke">

@@ -90,7 +90,7 @@ $_SESSION["cs_tel"] = $_POST["cs_tel"];
                     <input type="tel" name="num_head_1" id="num_head_1" value="" placeholder="จำนวน"/>
                     
                     <legend>อุปกรณ์หัวเสา 2:</legend>
-                        <select name="head_2" id="head_1">
+                        <select name="head_2" id="head_2">
                             <option value="N/A">เลือกอุปกรณ์หัวเสา</option>
                                 <?php
                                 $sql_head = "SELECT * FROM tbl_price WHERE type = 'h'";
