@@ -81,7 +81,7 @@
                 ?>
             </tbody>
         </table>
-        <?php  echo "รวมเป็นเงินทั้งสิ้นประมาณ ".number_format($t_all2,)." บาท";   ?>
+        <?php  echo "รวมเป็นเงินทั้งสิ้นประมาณ ".number_format($t_all,2)." บาท";   ?>
     </div> 
       
 </div>
