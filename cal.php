@@ -53,8 +53,7 @@
         ?>
         
                 <?php
-                $j=0 ;
-                foreach($data as $data1){
+                for($j=0;$<=6;$j++;){
                     
                     /*$sql_pole_1 = "SELECT * FROM tbl_price WHERE mat_id =".$data1[$j][0];
                     $pole_1_query = mysqli_query($conn,$sql_pole_1);
@@ -70,7 +69,7 @@
                     echo $total.;
                    
                     $j=$j+1;*/
-                    echo $data1[0][0];
+                    echo $data[j][0]."<br>";
                 }
                 ?>
 
