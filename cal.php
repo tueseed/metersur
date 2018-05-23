@@ -74,8 +74,9 @@
                         echo "<td>".$objresult["pri"]."</td>";
                         echo "<td>".$total."</td>";
                         echo "</tr>";
+                        $t_all =$t_all+$total;
                     }
-                    $t_all =$t_all+$total;
+                    
                 }
                 ?>
             </tbody>
