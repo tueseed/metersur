@@ -70,12 +70,12 @@
                     $pole_1_query = mysqli_query($conn,$sql_pole_1);
                     $objResult = mysqli_fetch_array($pole_1_query);
                     $price = $objResult["pri"];
-                    $num_pole_1 = $data1[$j][1];
+                    $num = $data1[$j][1];
                     $total = $price*$num_pole_1;
                     //echo "<td>".$objResult["mat_name"]."</td>";
                     echo "<tr>";
-                    echo "<td>".$data1[0][0]."</td>";
-                    echo "<td>".$num_pole_1."</td>";
+                    echo "<td>".$objResult["mat_name"]."</td>";
+                    echo "<td>".$num."</td>";
                     echo "<td>".$price."</td>";
                     echo "<td>".$total."</td>";
                     echo "</tr>";
