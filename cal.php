@@ -72,7 +72,7 @@
                         echo "<td>".$objresult["mat_name"]."</td>";
                         echo "<td>".$data[$j][1]."</td>";
                         echo "<td>".$objresult["pri"]."</td>";
-                        echo "<td>".$total."</td>";
+                        echo "<td>".number_format($total,2)."</td>";
                         echo "</tr>";
                         $t_all =$t_all+$total;
                     }
@@ -81,7 +81,7 @@
                 ?>
             </tbody>
         </table>
-        <?php  echo "รวมเป็นเงินทั้งสิ้นประมาณ".$t_all;   ?>
+        <?php  echo "รวมเป็นเงินทั้งสิ้นประมาณ ".number_format($t_all2,)." บาท";   ?>
     </div> 
       
 </div>
