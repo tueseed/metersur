@@ -51,7 +51,7 @@
        
 
         ?>
-        <table align="center" data-role="table" id="temp-table" data-mode="reflow" class="ui-responsive table-stroke">
+        <table align="center" data-role="table" id="temp-table" >
         <thead>
             <tr>
                 <th>รายการ</th>
