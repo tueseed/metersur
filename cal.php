@@ -51,41 +51,30 @@
        
 
         ?>
-        <table align="center" data-role="table" id="temp-table" >
-        <thead>
-            <tr>
-                <th>รายการ</th>
-                <th>จำนวน</th>
-                <th>ราคา/หน่วย</th>
-                <th>เป็นเงิน</th>
-            </tr>
-        </thead>
-        <tbody align="center">
-            
+        
                 <?php
                 $j=0 ;
                 foreach($data as $data1){
                     
-                    $sql_pole_1 = "SELECT * FROM tbl_price WHERE mat_id =".$data1[$j][0];
+                    /*$sql_pole_1 = "SELECT * FROM tbl_price WHERE mat_id =".$data1[$j][0];
                     $pole_1_query = mysqli_query($conn,$sql_pole_1);
                     $objResult = mysqli_fetch_array($pole_1_query);
                     $price = $objResult["pri"];
                     $num = $data1[$j][1];
                     $total = $price*$num_pole_1;
                     //echo "<td>".$objResult["mat_name"]."</td>";
-                    echo "<tr>";
-                    echo "<td>".$objResult["mat_name"]."</td>";
-                    echo "<td>".$num."</td>";
-                    echo "<td>".$price."</td>";
-                    echo "<td>".$total."</td>";
-                    echo "</tr>";
-                    $j=$j+1;
+                    
+                    echo $objResult["mat_name"];
+                    echo $num;
+                    echo $price.;
+                    echo $total.;
+                   
+                    $j=$j+1;*/
+                    echo $data1[0][0];
                 }
                 ?>
 
-            </tr>
-        </tbody
-        </table>
+        
     </div> 
       
 </div>
