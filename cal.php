@@ -14,6 +14,10 @@
 	<div data-role="header">
 		<h1>ประมาณการค่าใช้จ่าย</h1>
 	</div>
+    <div data-role="content">
+        <h5>การไฟฟ้าส่วนภูมิภาค</h5>
+        <h5>สาขาอำเภอปากท่อ</h5>
+    </div>
     <div data-role="content"> 
         <?php
         require('./connect-db.php');
@@ -83,7 +87,11 @@
         </table>
         <?php  echo "รวมเป็นเงินทั้งสิ้นประมาณ ".number_format($t_all,2)." บาท";   ?>
     </div> 
-      
+    <div data-role="content">
+        <h5>ราคานี้เป็นราคาประมาณการเท่านั้น</h5>
+        <h5>เจ้าหน้าที่จะแจ้งราคาที่แน่นอนอีกครั้ง</h5>
+        <h5>โทร 032-2222222</h5>
+    </div>  
 </div>
 
 </body>
