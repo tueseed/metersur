@@ -7,6 +7,11 @@
 <link href="jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
 <script src="jquery-1.6.4.min.js" type="text/javascript"></script>
 <script src="jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<style>
+.txt{
+    text-align: center;
+}
+</style>
 </head> 
 <body> 
 
