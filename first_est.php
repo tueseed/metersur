@@ -11,6 +11,11 @@
 .txt{
     text-align: center;
 }
+.txt-a{
+        color:LightCoral;
+        background-color: none;
+        text-shadow: none;
+    }
 </style>
 </head> 
 <body> 
